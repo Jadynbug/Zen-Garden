@@ -2,15 +2,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Playfair+Display&family=Spectral:wght@200&family=Zen+Loop&display=swap');
 
 html {
-    background-color: #9064ff;
+    background-color: #64ffbc;
+    display: flex;
+    flex-direction: column;
 }
 
 body {
-    margin-top: 150px;
+    margin-top: 100px;
+    align-self: center;
     font-family: "Indie Flower", "Zen Loop", sans-serif;
-    width: 80%;
-    margin-left: 10%;
     background-color: #fd70df;
+    padding: 15px;
 }
 
 h1, h2, h3, h4 {
@@ -30,6 +32,7 @@ h1, h2, h3, h4 {
 }
 #fonts li {
     margin-right: 10px;
+    font-size: x-large;
 }
 #indie {
     font-family: "Indie Flower";
@@ -50,12 +53,14 @@ h1, h2, h3, h4 {
     grid-template-rows: auto auto auto;
     background-color: white;
     padding: 10px;
+    margin-bottom: 15px;
 }
 .color {
     height: 100px;
     width: 200px;
     margin: 5px;
     justify-self: center;
+    border-radius: 90px 0 90px 0;
 }
 
 div h2 {
@@ -79,4 +84,49 @@ div h2 {
 }
 #purple {
     background-color: #9064ff;
+}
+#elements {
+    display: flex;
+    flex-direction: column;
+    width: 1100px;
+    background-color: white;
+}
+#elements div {
+    border: solid #ffc964;
+    padding: 10px;
+    margin: 10px;
+}
+.headline {
+    height: 40px;
+}
+#headline-big {
+    height: auto;
+}
+#elements #color-p {
+    background-color: #9064ff;
+    color: white;
+    border-color: #ff7b64;
+}
+#elements ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+#elements li {
+    margin-right: 15px;
+}
+a {
+    text-decoration: none;
+    font-family: "Zen Loop", sans-serif;
+    font-weight: 700;
+    color: white;
+    background-color: #9064ff;
+    padding: 15px;
+    border-radius: 90px 0 90px 0;
+}
+a:visited {
+    background-color: #64ffbc;
+}
+a:hover {
+    background-color: #ff52da;
 }
