@@ -130,3 +130,15 @@ a:visited {
 a:hover {
     background-color: #ff52da;
 }
+
+#pic-list {
+    flex-flow: column wrap;
+}
+#pic-list li {
+    margin: 10px;
+}
+.pic {
+    width: auto;
+    height: 200px;
+    box-shadow: 5px 5px 5px;
+}
