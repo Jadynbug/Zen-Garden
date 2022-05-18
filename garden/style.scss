@@ -1,0 +1,74 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Playfair+Display&family=Spectral:wght@200&family=Zen+Loop&display=swap');
+
+//fonts
+$indie: "Indie Flower";
+$zen: "Zen Loop";
+$spectal: "Spectral";
+$playfair: "Playfair Display";
+//font lists
+$serif-font: $spectal, $playfair, "serif";
+$sans-serif-font: $indie, $zen, "sans-serif";
+//colors
+$green: #64ffbc;
+$pink: #fd70df;
+$purple: #9064ff;
+$orange: #ff7b64;
+$yellow: #ffc964;
+//sets font fam via size. large = headlines, small = body
+@mixin font-fam ($size) {
+    @if ($size == "large") {
+        font-family: $serif-font;
+    }
+    @else if ($size == "small") {
+        font-family: $sans-serif-font;
+    }
+}
+//sets a list of links into a row. To be used for the footer.
+@mixin LinkList {
+    display: flex;
+    flex-direction: row;
+
+    & li {
+        margin-right: 15px;
+    }
+}
+//to style links in general. May need touch ups as the leaf link version
+//may not always work
+@mixin linkStyle {
+    text-decoration: none;
+    font-family: "Zen Loop", sans-serif;
+    font-weight: 700;
+    color: white;
+    background-color: #9064ff;
+    padding: 15px;
+    border-radius: 90px 0 90px 0;
+
+    &:visited {
+        background-color: #64ffbc;
+    }
+    &:hover {
+        background-color: #ff52da;
+    }
+}
+//to style to links in the sidebars
+//will be added to
+@mixin listin {
+    list-style: none;
+}
+//to easily set a div, p, of section to a color with white lettering
+@mixin color-p ($arg) {
+    background-color: $arg;
+    color: white;
+}
+
+
+
+
+
+@media only screen and (min-width: 1200px) {
+
+}
+@media only screen and (max-width: 1199px) {
+    
+}
