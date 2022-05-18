@@ -24,7 +24,7 @@ $yellow: #ffc964;
         font-family: $sans-serif-font;
     }
 }
-@mixin makeLinkLine {
+@mixin LinkList {
     list-style: none;
     display: flex;
     flex-direction: row;
