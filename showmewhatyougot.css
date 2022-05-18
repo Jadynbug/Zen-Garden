@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Playfair+Display&family=Spectral:wght@200&family=Zen+Loop&display=swap");
+body {
+  font-family: "Indie Flower", "Zen Loop", "sans-serif";
+}
+
+h1, h2, h3 {
+  font-family: "Spectral", "Playfair Display", "serif";
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-synthesis: 1em;
+}
+
+footer a {
+  text-decoration: none;
+  font-family: "Zen Loop", sans-serif;
+  font-weight: 700;
+  color: white;
+  background-color: #9064ff;
+  padding: 15px;
+  border-radius: 90px 0 90px 0;
+}
+footer a:visited {
+  background-color: #64ffbc;
+}
+footer a:hover {
+  background-color: #ff52da;
+}
+
+.preamble {
+  background-color: #9064ff;
+  color: white;
+}
+
+@media only screen and (min-width: 1200px) {
+  header {
+    background-color: #64ffbc;
+    color: white;
+    padding: 10px;
+    border-radius: 0 0 90px 90px;
+    text-align: center;
+  }
+
+  h1, h2 {
+    margin: 5px;
+  }
+
+  .summary {
+    background-color: #fd70df;
+    color: white;
+    text-align: center;
+    border-radius: 80px;
+    padding: 10px;
+  }
+
+  .preamble {
+    text-align: center;
+    border-radius: 80px;
+    padding: 10px;
+  }
+
+  .explanation {
+    background-color: #ff7b64;
+    color: white;
+    text-align: center;
+    border-radius: 80px;
+    padding: 10px;
+  }
+
+  .participation {
+    background-color: #ffc964;
+    color: white;
+    text-align: center;
+    border-radius: 80px;
+    padding: 10px;
+  }
+
+  .benefits {
+    background-color: #64ffbc;
+    color: white;
+    text-align: center;
+    border-radius: 80px;
+    padding: 10px;
+  }
+
+  .requirements {
+    background-color: #fd70df;
+    color: white;
+    text-align: center;
+    border-radius: 80px;
+    padding: 10px;
+  }
+
+  footer {
+    background-color: #ffc964;
+    color: white;
+    border-radius: 80px 80px 0 0;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .sidebar {
+    background-color: #9064ff;
+    color: white;
+    text-align: center;
+    border-radius: 80px;
+    padding: 10px;
+  }
+
+  ul {
+    list-style: none;
+  }
+}
+
+/*# sourceMappingURL=showmewhatyougot.css.map */
