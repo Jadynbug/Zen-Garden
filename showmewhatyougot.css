@@ -15,6 +15,20 @@ h2 {
   font-synthesis: 1em;
 }
 
+a {
+  text-decoration: wavy;
+  font-family: "Zen Loop", sans-serif;
+  font-weight: 700;
+  font-size: x-large;
+  color: #9064ff;
+}
+a:visited {
+  color: #64ffbc;
+}
+a:hover {
+  color: #fd70df;
+}
+
 footer a {
   text-decoration: none;
   font-family: "Zen Loop", sans-serif;
@@ -26,13 +40,10 @@ footer a {
 }
 footer a:visited {
   background-color: #64ffbc;
+  color: white;
 }
 footer a:hover {
   background-color: #ff52da;
-}
-
-.preamble {
-  background-color: #9064ff;
   color: white;
 }
 
@@ -53,8 +64,12 @@ footer a:hover {
     grid-template-rows: 150px 100px 240px;
   }
   .intro header {
-    background-color: #64ffbc;
-    color: white;
+    background-color: rgba(100, 255, 188, 0.5);
+    /*@if ($arg == $opYellow or $arg == $yellow) {
+        color: black;
+    } @else {
+        color: white;
+    }*/
     padding: 10px;
     border-radius: 0 0 90px 90px;
     text-align: center;
@@ -62,8 +77,12 @@ footer a:hover {
     grid-row: 1;
   }
   .intro .summary {
-    background-color: #fd70df;
-    color: white;
+    background-color: rgba(253, 112, 223, 0.5);
+    /*@if ($arg == $opYellow or $arg == $yellow) {
+        color: black;
+    } @else {
+        color: white;
+    }*/
     text-align: center;
     border-radius: 80px;
     padding: 10px;
@@ -71,6 +90,12 @@ footer a:hover {
     grid-row: 2;
   }
   .intro .preamble {
+    background-color: rgba(144, 100, 255, 0.5);
+    /*@if ($arg == $opYellow or $arg == $yellow) {
+        color: black;
+    } @else {
+        color: white;
+    }*/
     text-align: center;
     border-radius: 80px;
     padding: 10px;
@@ -88,11 +113,15 @@ footer a:hover {
     display: grid;
     grid-gap: 5px;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(3, 150px) 410px 55px;
+    grid-template-rows: 250px 330px 150px 410px 55px;
   }
   #zen-supporting .explanation {
-    background-color: #ff7b64;
-    color: white;
+    background-color: rgba(255, 123, 100, 0.5);
+    /*@if ($arg == $opYellow or $arg == $yellow) {
+        color: black;
+    } @else {
+        color: white;
+    }*/
     text-align: center;
     border-radius: 80px;
     padding: 10px;
@@ -100,8 +129,12 @@ footer a:hover {
     grid-row: 1;
   }
   #zen-supporting .participation {
-    background-color: #ffc964;
-    color: white;
+    background-color: rgba(255, 201, 100, 0.5);
+    /*@if ($arg == $opYellow or $arg == $yellow) {
+        color: black;
+    } @else {
+        color: white;
+    }*/
     text-align: center;
     border-radius: 80px;
     padding: 10px;
@@ -109,8 +142,12 @@ footer a:hover {
     grid-row: 2;
   }
   #zen-supporting .benefits {
-    background-color: #64ffbc;
-    color: white;
+    background-color: rgba(100, 255, 188, 0.5);
+    /*@if ($arg == $opYellow or $arg == $yellow) {
+        color: black;
+    } @else {
+        color: white;
+    }*/
     text-align: center;
     border-radius: 80px;
     padding: 10px;
@@ -118,8 +155,12 @@ footer a:hover {
     grid-row: 3;
   }
   #zen-supporting .requirements {
-    background-color: #fd70df;
-    color: white;
+    background-color: rgba(253, 112, 223, 0.5);
+    /*@if ($arg == $opYellow or $arg == $yellow) {
+        color: black;
+    } @else {
+        color: white;
+    }*/
     text-align: center;
     border-radius: 80px;
     padding: 10px;
@@ -127,8 +168,12 @@ footer a:hover {
     grid-row: 4;
   }
   #zen-supporting footer {
-    background-color: #ffc964;
-    color: white;
+    background-color: rgba(255, 201, 100, 0.5);
+    /*@if ($arg == $opYellow or $arg == $yellow) {
+        color: black;
+    } @else {
+        color: white;
+    }*/
     border-radius: 80px 80px 0 0;
     text-align: center;
     padding: 15px;
@@ -137,8 +182,12 @@ footer a:hover {
   }
 
   .sidebar {
-    background-color: #9064ff;
-    color: white;
+    background-color: rgba(144, 100, 255, 0.5);
+    /*@if ($arg == $opYellow or $arg == $yellow) {
+        color: black;
+    } @else {
+        color: white;
+    }*/
     text-align: center;
     border-radius: 80px;
     padding: 10px;
