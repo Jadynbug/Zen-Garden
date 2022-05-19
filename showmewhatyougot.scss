@@ -94,47 +94,92 @@ footer a {
 
 //for big screens
 @media only screen and (min-width: 1200px) {
-    header {
-        @include color-p($green);
-        padding: 10px;
-        border-radius: 0 0 90px 90px;
-        text-align: center;
+    .page-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(9, 160px);
+        grid-gap: 10px;
+    }
+    .intro {
+        grid-column: 1/4;
+        grid-row: 1/4;
+
+        display: grid;
+        grid-gap: 5px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 150px 100px 240px;
+
+        & header {
+            @include color-p($green);
+            padding: 10px;
+            border-radius: 0 0 90px 90px;
+            text-align: center;
+            grid-column: 1/4;
+            grid-row: 1;
+        }
+        & .summary {
+            @include color-p($pink);
+            @include set-div();
+            grid-column: 1/3;
+            grid-row: 2;
+        }
+        & .preamble {
+            @include set-div();
+            grid-column: 1/3;
+            grid-row: 3;
+        }
     }
     h1, h2 {
         margin: 5px;
     }
-    .summary {
-        @include color-p($pink);
-        @include set-div();
+    #zen-supporting {
+        grid-column: 1/4;
+        grid-row: 4/8;
+
+        display: grid;
+        grid-gap: 5px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(3, 150px) 410px 55px;
+
+        & .explanation {
+            @include color-p($orange);
+            @include set-div();
+            grid-column: 1/3;
+            grid-row: 1;
+        }
+        & .participation {
+            @include color-p($yellow);
+            @include set-div();
+            grid-column: 1/3;
+            grid-row: 2;
+        }
+        & .benefits {
+            @include color-p($green);
+            @include set-div();
+            grid-column: 1/3;
+            grid-row: 3;
+        }
+        & .requirements {
+            @include color-p($pink);
+            @include set-div();
+            grid-column: 1/4;
+            grid-row: 4;
+        }
+        & footer {
+            @include color-p($yellow);
+            border-radius: 80px 80px 0 0;
+            text-align: center;
+            padding: 15px;
+            grid-column: 1/4;
+            grid-row: 5;
+        }
     }
-    .preamble {
-        @include set-div();
-    }
-    .explanation {
-        @include color-p($orange);
-        @include set-div();
-    }
-    .participation {
-        @include color-p($yellow);
-        @include set-div();
-    }
-    .benefits {
-        @include color-p($green);
-        @include set-div();
-    }
-    .requirements {
-        @include color-p($pink);
-        @include set-div();
-    }
-    footer {
-        @include color-p($yellow);
-        border-radius: 80px 80px 0 0;
-        text-align: center;
-        padding: 15px;
-    }
+
     .sidebar {
         @include color-p($purple);
-        @include set-div();        
+        @include set-div(); 
+        grid-column: 3/4;
+        grid-row: 2/7;       
     }
     ul {
         @include listin();
