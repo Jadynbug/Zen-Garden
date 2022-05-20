@@ -120,7 +120,7 @@ footer a {
 }
 
 //for big screens
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1400px) {
     .page-wrapper {
         display: grid;
         grid-template-columns: 1fr 1fr 300px;
@@ -212,6 +212,10 @@ footer a {
     ul {
         @include listin();
     }
+}
+//for medium screens
+@media only screen and (max-width: 1399px) and (min-width: 800px) {
+    
 }
 //for little screens
 @media only screen and (max-width: 1199px) {
