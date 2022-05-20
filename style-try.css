@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Playfair+Display&family=Spectral:wght@200&family=Zen+Loop&display=swap");
+body {
+  font-family: "Indie Flower", "Zen Loop", "sans-serif";
+}
+
+h1, h2, h3 {
+  font-family: "Spectral", "Playfair Display", "serif";
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-synthesis: 1em;
+}
+
+a {
+  text-decoration: none;
+  font-family: "Zen Loop", sans-serif;
+  font-weight: 700;
+  color: white;
+  background-color: #9064ff;
+  padding: 15px;
+  border-radius: 90px 0 90px 0;
+}
+a:visited {
+  background-color: #64ffbc;
+}
+a:hover {
+  background-color: #ff52da;
+}
+
+.preamble {
+  background-color: #9064ff;
+  color: white;
+}
+
+/*# sourceMappingURL=style-try.css.map */

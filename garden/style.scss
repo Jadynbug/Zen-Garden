@@ -15,7 +15,7 @@ $pink: #fd70df;
 $purple: #9064ff;
 $orange: #ff7b64;
 $yellow: #ffc964;
-
+//sets font fam via size. large = headlines, small = body
 @mixin font-fam ($size) {
     @if ($size == "large") {
         font-family: $serif-font;
@@ -24,8 +24,8 @@ $yellow: #ffc964;
         font-family: $sans-serif-font;
     }
 }
+//sets a list of links into a row. To be used for the footer.
 @mixin LinkList {
-    list-style: none;
     display: flex;
     flex-direction: row;
 
@@ -33,6 +33,8 @@ $yellow: #ffc964;
         margin-right: 15px;
     }
 }
+//to style links in general. May need touch ups as the leaf link version
+//may not always work
 @mixin linkStyle {
     text-decoration: none;
     font-family: "Zen Loop", sans-serif;
@@ -49,12 +51,19 @@ $yellow: #ffc964;
         background-color: #ff52da;
     }
 }
+//to style to links in the sidebars
+//will be added to
+@mixin listin {
+    list-style: none;
+}
+//to easily set a div, p, of section to a color with white lettering
 @mixin color-p ($arg) {
     background-color: $arg;
     color: white;
 }
 
-
+//css shared between all sized screen.
+//set things like font and color for divs so they match
 body {
     @include font-fam(small);
 }
@@ -73,4 +82,13 @@ a {
 }
 .preamble {
     @include color-p($purple);
+}
+
+//for big screens
+@media only screen and (min-width: 1200px) {
+
+}
+//for little screens
+@media only screen and (max-width: 1199px) {
+
 }
