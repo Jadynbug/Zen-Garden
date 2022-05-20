@@ -199,5 +199,124 @@ footer a:hover {
     list-style: none;
   }
 }
+@media only screen and (max-width: 1199px) {
+  .page-wrapper {
+    display: grid;
+  }
+
+  .intro header {
+    background-color: rgba(100, 255, 188, 0.5);
+    /*@if ($arg == $opYellow or $arg == $yellow) {
+        color: black;
+    } @else {
+        color: white;
+    }*/
+    padding: 10px;
+    border-radius: 0 0 90px 90px;
+    text-align: center;
+  }
+  .intro .summary {
+    background-color: rgba(253, 112, 223, 0.5);
+    /*@if ($arg == $opYellow or $arg == $yellow) {
+        color: black;
+    } @else {
+        color: white;
+    }*/
+    text-align: center;
+    border-radius: 80px;
+    padding: 10px;
+  }
+  .intro .preamble {
+    background-color: rgba(144, 100, 255, 0.5);
+    /*@if ($arg == $opYellow or $arg == $yellow) {
+        color: black;
+    } @else {
+        color: white;
+    }*/
+    text-align: center;
+    border-radius: 80px;
+    padding: 10px;
+  }
+
+  h1, h2 {
+    margin: 5px;
+  }
+
+  #zen-supporting {
+    grid-row: 7/13;
+    display: grid;
+    grid-gap: 5px;
+  }
+  #zen-supporting .explanation {
+    background-color: rgba(255, 123, 100, 0.5);
+    /*@if ($arg == $opYellow or $arg == $yellow) {
+        color: black;
+    } @else {
+        color: white;
+    }*/
+    text-align: center;
+    border-radius: 80px;
+    padding: 10px;
+  }
+  #zen-supporting .participation {
+    background-color: rgba(255, 201, 100, 0.5);
+    /*@if ($arg == $opYellow or $arg == $yellow) {
+        color: black;
+    } @else {
+        color: white;
+    }*/
+    text-align: center;
+    border-radius: 80px;
+    padding: 10px;
+  }
+  #zen-supporting .benefits {
+    background-color: rgba(144, 100, 255, 0.5);
+    /*@if ($arg == $opYellow or $arg == $yellow) {
+        color: black;
+    } @else {
+        color: white;
+    }*/
+    text-align: center;
+    border-radius: 80px;
+    padding: 10px;
+  }
+  #zen-supporting .requirements {
+    background-color: rgba(253, 112, 223, 0.5);
+    /*@if ($arg == $opYellow or $arg == $yellow) {
+        color: black;
+    } @else {
+        color: white;
+    }*/
+    text-align: center;
+    border-radius: 80px;
+    padding: 10px;
+  }
+  #zen-supporting footer {
+    background-color: rgba(100, 255, 188, 0.5);
+    /*@if ($arg == $opYellow or $arg == $yellow) {
+        color: black;
+    } @else {
+        color: white;
+    }*/
+    border-radius: 80px 80px 0 0;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .sidebar {
+    background-color: rgba(100, 255, 188, 0.5);
+    /*@if ($arg == $opYellow or $arg == $yellow) {
+        color: black;
+    } @else {
+        color: white;
+    }*/
+    text-align: center;
+    border-radius: 80px;
+    padding: 10px;
+  }
+  .sidebar ul {
+    list-style: none;
+  }
+}
 
 /*# sourceMappingURL=showmewhatyougot.css.map */

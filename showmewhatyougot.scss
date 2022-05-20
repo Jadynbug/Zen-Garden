@@ -215,5 +215,82 @@ footer a {
 }
 //for little screens
 @media only screen and (max-width: 1199px) {
+    .page-wrapper {
+        display: grid;
+      
+    }
+    .intro {
+       
+        // grid-row: 1/3;
 
+        // display: grid;
+        // grid-gap: 5px;
+        // grid-template-columns: 1fr 1fr 300px;
+        // grid-template-rows: 150px 100px 240px;
+
+        & header {
+            @include color-p($opGreen);
+            padding: 10px;
+            border-radius: 0 0 90px 90px;
+            text-align: center;
+            // grid-row: 1;
+        }
+        & .summary {
+            @include color-p($opPink);
+            @include set-div();
+            // grid-row: 3;
+        }
+        & .preamble {
+            @include color-p($opPurple);
+            @include set-div();
+            // grid-row: 5;
+        }
+    }
+    h1, h2 {
+        margin: 5px;
+    }
+    #zen-supporting {
+        grid-row: 7/13;
+
+        display: grid;
+        grid-gap: 5px;
+        
+
+        & .explanation {
+            @include color-p($opOrange);
+            @include set-div();
+        
+        }
+        & .participation {
+            @include color-p($opYellow);
+            @include set-div();
+            
+        }
+        & .benefits {
+            @include color-p($opPurple);
+            @include set-div();
+           
+        }
+        & .requirements {
+            @include color-p($opPink);
+            @include set-div();
+            
+        }
+        & footer {
+            @include color-p($opGreen);
+            border-radius: 80px 80px 0 0;
+            text-align: center;
+            padding: 15px;
+           
+        }
+    }
+
+    .sidebar {
+        @include color-p($opGreen);
+        @include set-div(); 
+       
+    ul {
+        @include listin();
+    }
+}
 }
