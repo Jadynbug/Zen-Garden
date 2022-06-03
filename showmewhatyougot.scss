@@ -26,7 +26,7 @@ $opYellow: rgba(255, 201, 100, $op);
 //border radius
 $radius: 80px;
 //sets width for body
-$width: 400px;
+$width: 600px;
 //sets font fam via size. large = headlines, small = body
 @mixin font-fam ($size) {
     @if ($size == "large") {
@@ -87,11 +87,6 @@ $width: 400px;
 //to easily set a div, p, of section to a color with white lettering
 @mixin color-p ($arg) {
     background-color: $arg;
-    /*@if ($arg == $opYellow or $arg == $yellow) {
-        color: black;
-    } @else {
-        color: white;
-    }*/
 }
 //set base for large screen div
 @mixin set-div {
@@ -128,12 +123,15 @@ footer a {
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-position: center;
+        background-size: 100vw 100vh;
+
+
     }
     .page-wrapper {
        display: grid;
        grid-template-columns: 1fr 200px;
-       grid-template-rows: repeat(auto-fill, minmax(100px, 680px));
-       justify-items: right;
+       grid-template-rows: repeat(auto-fill, minmax(100px, 585px));
+       justify-items: center;
        grid-column-gap: 15px;
     }
     .intro {
@@ -154,6 +152,7 @@ footer a {
             @include color-p($opPink);
             width: $width;
             margin-left: auto;
+            margin-right: auto;
 
             &:hover {
                 @include color-p($pink);
@@ -163,9 +162,11 @@ footer a {
             @include color-p($opPurple);
             width: $width;
             margin-left: auto;
+            margin-right: auto;
+
 
             &:hover {
-                @include color-p($pink);
+                @include color-p($purple);
             }
         }
     }
@@ -225,10 +226,14 @@ footer a {
         padding: 5px; 
         grid-column: 2;
         grid-row: 1/span 2;
-        padding-top: 150px;
+        padding-top: 5px;
+        font-size: 10px;
 
         &:hover {
             @include color-p($green);
+        }
+        & li a {
+            font-size: 23px;
         }
     }
 }
