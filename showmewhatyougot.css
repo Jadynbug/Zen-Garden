@@ -183,18 +183,24 @@ footer a:hover {
     border-radius: 0 0 90px 90px;
     text-align: center;
     border-block: solid 10px;
-    border-color: rgba(100, 255, 188, 0.5);
+    border-color: #64ffbc;
     background-color: aliceblue;
     opacity: 0.55;
+  }
+  .intro header:hover {
+    opacity: .7;
   }
   .intro .summary {
     text-align: center;
     padding: 10px;
     border-radius: 90px 90px 90px 90px;
     border-block: solid 10px;
-    border-color: rgba(253, 112, 223, 0.5);
+    border-color: #fd70df;
     background-color: aliceblue;
     opacity: 0.55;
+  }
+  .intro .summary:hover {
+    opacity: .7;
   }
   .intro .preamble {
     border-radius: 90px 90px 90px 90px;
@@ -202,9 +208,12 @@ footer a:hover {
     padding: 10px;
     border-radius: 90px 90px 90px 90px;
     border-block: solid 10px;
-    border-color: rgba(144, 100, 255, 0.5);
+    border-color: #9064ff;
     background-color: aliceblue;
     opacity: 0.55;
+  }
+  .intro .preamble:hover {
+    opacity: .7;
   }
   h1, h2 {
     margin: 5px;
@@ -219,36 +228,48 @@ footer a:hover {
     padding: 10px;
     border-radius: 90px 90px 90px 90px;
     border-block: solid 10px;
-    border-color: rgba(255, 123, 100, 0.5);
+    border-color: #ff7b64;
     background-color: aliceblue;
     opacity: 0.55;
+  }
+  #zen-supporting .explanation:hover {
+    opacity: .7;
   }
   #zen-supporting .participation {
     text-align: center;
     padding: 10px;
     border-radius: 90px 90px 90px 90px;
     border-block: solid 10px;
-    border-color: rgba(255, 201, 100, 0.5);
+    border-color: #ffc964;
     background-color: aliceblue;
     opacity: 0.55;
+  }
+  #zen-supporting .participation:hover {
+    opacity: .7;
   }
   #zen-supporting .benefits {
     text-align: center;
     padding: 10px;
     border-radius: 90px 90px 90px 90px;
     border-block: solid 10px;
-    border-color: rgba(144, 100, 255, 0.5);
+    border-color: #9064ff;
     background-color: aliceblue;
     opacity: 0.55;
+  }
+  #zen-supporting .benefits:hover {
+    opacity: .7;
   }
   #zen-supporting .requirements {
     text-align: center;
     padding: 10px;
     border-radius: 90px 90px 90px 90px;
     border-block: solid 10px;
-    border-color: rgba(253, 112, 223, 0.5);
+    border-color: #fd70df;
     background-color: aliceblue;
     opacity: 0.55;
+  }
+  #zen-supporting .requirements:hover {
+    opacity: .7;
   }
   #zen-supporting footer {
     border-radius: 80px 80px 0 0;
@@ -256,18 +277,24 @@ footer a:hover {
     padding: 15px;
     border-radius: 90px 90px 90px 90px;
     border-block: solid 10px;
-    border-color: rgba(100, 255, 188, 0.5);
+    border-color: #64ffbc;
     background-color: aliceblue;
     opacity: 0.55;
+  }
+  #zen-supporting footer:hover {
+    opacity: .7;
   }
   .sidebar {
     text-align: center;
     padding: 10px;
     border-radius: 90px 90px 90px 90px;
     border-block: solid 10px;
-    border-color: rgba(100, 255, 188, 0.5);
+    border-color: #64ffbc;
     background-color: aliceblue;
     opacity: 0.55;
+  }
+  .sidebar:hover {
+    opacity: .7;
   }
   .sidebar ul {
     list-style: none;
