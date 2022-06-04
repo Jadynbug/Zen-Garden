@@ -262,6 +262,7 @@ footer a {
 
         display: grid;
         grid-gap: 100px;
+        justify-items: center;
         // grid-template-columns: 1fr 1fr 300px;
         // grid-template-rows: 150px 100px 240px;
 
@@ -274,6 +275,7 @@ footer a {
             border-color: $green;
             background-color: aliceblue;
             opacity: 0.55;
+            width: 100%;
             &:hover {
                 opacity:.7;
             }
@@ -287,6 +289,7 @@ footer a {
             border-color: $pink;
             background-color: aliceblue;
             opacity: 0.55;
+            width: 70%;
             &:hover {
                 opacity:.7;
             }
@@ -300,6 +303,7 @@ footer a {
             border-color: $purple;
             background-color: aliceblue;
             opacity: 0.55;
+            width: 70%;
             &:hover {
                 opacity:.7;
             }
@@ -314,6 +318,7 @@ footer a {
 
         display: grid;
         grid-gap: 100px;
+        justify-items: center;
         
 
         & .explanation {
@@ -324,6 +329,7 @@ footer a {
             border-color: $orange;
             background-color: aliceblue;
             opacity: 0.55;
+            width: 70%;
             &:hover {
                 opacity:.7;
             }
@@ -337,6 +343,7 @@ footer a {
             border-color: $yellow;
             background-color: aliceblue;
             opacity: 0.55;
+            width: 70%;
             &:hover {
                 opacity:.7;
             }
@@ -350,6 +357,7 @@ footer a {
             border-color: $purple;
             background-color: aliceblue;
             opacity: 0.55;
+            width: 70%;
             &:hover {
                 opacity:.7;
             }
@@ -363,6 +371,7 @@ footer a {
             border-color: $pink;
             background-color: aliceblue;
             opacity: 0.55;
+            width: 70%;
             &:hover {
                 opacity:.7;
             }
@@ -378,6 +387,7 @@ footer a {
             border-color: $green;
             background-color: aliceblue;
             opacity: 0.55;
+            width: 70%;
             &:hover {
                 opacity:.7;
             }
@@ -388,7 +398,7 @@ footer a {
     .sidebar {
        // @include color-p($opGreen);
         @include set-div(); 
-        border-radius: 90px 0px 90px 0px;
+        border-radius: 0px 0px 0px 0px;
         border-block: solid 10px;
         border-color: $green;
         background-color: aliceblue;

@@ -177,6 +177,7 @@ footer a:hover {
     display: -ms-grid;
     display: grid;
     grid-gap: 100px;
+    justify-items: center;
   }
   .intro header {
     padding: 10px;
@@ -186,6 +187,7 @@ footer a:hover {
     border-color: #64ffbc;
     background-color: aliceblue;
     opacity: 0.55;
+    width: 100%;
   }
   .intro header:hover {
     opacity: .7;
@@ -198,6 +200,7 @@ footer a:hover {
     border-color: #fd70df;
     background-color: aliceblue;
     opacity: 0.55;
+    width: 70%;
   }
   .intro .summary:hover {
     opacity: .7;
@@ -210,6 +213,7 @@ footer a:hover {
     border-color: #9064ff;
     background-color: aliceblue;
     opacity: 0.55;
+    width: 70%;
   }
   .intro .preamble:hover {
     opacity: .7;
@@ -221,6 +225,7 @@ footer a:hover {
     display: -ms-grid;
     display: grid;
     grid-gap: 100px;
+    justify-items: center;
   }
   #zen-supporting .explanation {
     text-align: center;
@@ -230,6 +235,7 @@ footer a:hover {
     border-color: #ff7b64;
     background-color: aliceblue;
     opacity: 0.55;
+    width: 70%;
   }
   #zen-supporting .explanation:hover {
     opacity: .7;
@@ -242,6 +248,7 @@ footer a:hover {
     border-color: #ffc964;
     background-color: aliceblue;
     opacity: 0.55;
+    width: 70%;
   }
   #zen-supporting .participation:hover {
     opacity: .7;
@@ -254,6 +261,7 @@ footer a:hover {
     border-color: #9064ff;
     background-color: aliceblue;
     opacity: 0.55;
+    width: 70%;
   }
   #zen-supporting .benefits:hover {
     opacity: .7;
@@ -266,6 +274,7 @@ footer a:hover {
     border-color: #fd70df;
     background-color: aliceblue;
     opacity: 0.55;
+    width: 70%;
   }
   #zen-supporting .requirements:hover {
     opacity: .7;
@@ -279,6 +288,7 @@ footer a:hover {
     border-color: #64ffbc;
     background-color: aliceblue;
     opacity: 0.55;
+    width: 70%;
   }
   #zen-supporting footer:hover {
     opacity: .7;
@@ -286,7 +296,7 @@ footer a:hover {
   .sidebar {
     text-align: center;
     padding: 10px;
-    border-radius: 90px 0px 90px 0px;
+    border-radius: 0px 0px 0px 0px;
     border-block: solid 10px;
     border-color: #64ffbc;
     background-color: aliceblue;
