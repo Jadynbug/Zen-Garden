@@ -282,7 +282,7 @@ footer a {
         & .summary {
             //@include color-p($opPink);
             @include set-div();
-            border-radius: 90px 90px 90px 90px;
+            border-radius: 0px 90px 0px 90px;
             border-block: solid 10px;
             border-color: $pink;
             background-color: aliceblue;
@@ -294,9 +294,8 @@ footer a {
         }
         & .preamble {
            // @include color-p($opPurple);
-            border-radius: 90px 90px 90px 90px;
+            border-radius: 90px 0px 90px 0px;
             @include set-div();
-            border-radius: 90px 90px 90px 90px;
             border-block: solid 10px;
             border-color: $purple;
             background-color: aliceblue;
@@ -320,7 +319,7 @@ footer a {
         & .explanation {
            // @include color-p($opOrange);
             @include set-div();
-            border-radius: 90px 90px 90px 90px;
+            border-radius: 0px 90px 0px 90px;
             border-block: solid 10px;
             border-color: $orange;
             background-color: aliceblue;
@@ -333,7 +332,7 @@ footer a {
         & .participation {
            // @include color-p($opYellow);
             @include set-div();
-            border-radius: 90px 90px 90px 90px;
+            border-radius: 90px 0px 90px 0px;
             border-block: solid 10px;
             border-color: $yellow;
             background-color: aliceblue;
@@ -346,7 +345,7 @@ footer a {
         & .benefits {
            // @include color-p($opPurple);
             @include set-div();
-            border-radius: 90px 90px 90px 90px;
+            border-radius: 0px 90px 0px 90px;
             border-block: solid 10px;
             border-color: $purple;
             background-color: aliceblue;
@@ -359,7 +358,7 @@ footer a {
         & .requirements {
             //@include color-p($opPink);
             @include set-div();
-            border-radius: 90px 90px 90px 90px;
+            border-radius: 90px 0px 90px 0px;
             border-block: solid 10px;
             border-color: $pink;
             background-color: aliceblue;
@@ -374,7 +373,7 @@ footer a {
             border-radius: 80px 80px 0 0;
             text-align: center;
             padding: 15px;
-            border-radius: 90px 90px 90px 90px;
+            border-radius: 0px 90px 0px 90px;
             border-block: solid 10px;
             border-color: $green;
             background-color: aliceblue;
@@ -389,7 +388,7 @@ footer a {
     .sidebar {
        // @include color-p($opGreen);
         @include set-div(); 
-        border-radius: 90px 90px 90px 90px;
+        border-radius: 90px 0px 90px 0px;
         border-block: solid 10px;
         border-color: $green;
         background-color: aliceblue;

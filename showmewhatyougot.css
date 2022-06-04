@@ -193,7 +193,7 @@ footer a:hover {
   .intro .summary {
     text-align: center;
     padding: 10px;
-    border-radius: 90px 90px 90px 90px;
+    border-radius: 0px 90px 0px 90px;
     border-block: solid 10px;
     border-color: #fd70df;
     background-color: aliceblue;
@@ -203,10 +203,9 @@ footer a:hover {
     opacity: .7;
   }
   .intro .preamble {
-    border-radius: 90px 90px 90px 90px;
+    border-radius: 90px 0px 90px 0px;
     text-align: center;
     padding: 10px;
-    border-radius: 90px 90px 90px 90px;
     border-block: solid 10px;
     border-color: #9064ff;
     background-color: aliceblue;
@@ -226,7 +225,7 @@ footer a:hover {
   #zen-supporting .explanation {
     text-align: center;
     padding: 10px;
-    border-radius: 90px 90px 90px 90px;
+    border-radius: 0px 90px 0px 90px;
     border-block: solid 10px;
     border-color: #ff7b64;
     background-color: aliceblue;
@@ -238,7 +237,7 @@ footer a:hover {
   #zen-supporting .participation {
     text-align: center;
     padding: 10px;
-    border-radius: 90px 90px 90px 90px;
+    border-radius: 90px 0px 90px 0px;
     border-block: solid 10px;
     border-color: #ffc964;
     background-color: aliceblue;
@@ -250,7 +249,7 @@ footer a:hover {
   #zen-supporting .benefits {
     text-align: center;
     padding: 10px;
-    border-radius: 90px 90px 90px 90px;
+    border-radius: 0px 90px 0px 90px;
     border-block: solid 10px;
     border-color: #9064ff;
     background-color: aliceblue;
@@ -262,7 +261,7 @@ footer a:hover {
   #zen-supporting .requirements {
     text-align: center;
     padding: 10px;
-    border-radius: 90px 90px 90px 90px;
+    border-radius: 90px 0px 90px 0px;
     border-block: solid 10px;
     border-color: #fd70df;
     background-color: aliceblue;
@@ -275,7 +274,7 @@ footer a:hover {
     border-radius: 80px 80px 0 0;
     text-align: center;
     padding: 15px;
-    border-radius: 90px 90px 90px 90px;
+    border-radius: 0px 90px 0px 90px;
     border-block: solid 10px;
     border-color: #64ffbc;
     background-color: aliceblue;
@@ -287,7 +286,7 @@ footer a:hover {
   .sidebar {
     text-align: center;
     padding: 10px;
-    border-radius: 90px 90px 90px 90px;
+    border-radius: 90px 0px 90px 0px;
     border-block: solid 10px;
     border-color: #64ffbc;
     background-color: aliceblue;
