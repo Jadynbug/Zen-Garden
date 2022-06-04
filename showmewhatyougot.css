@@ -190,7 +190,7 @@ footer a:hover {
     width: 100%;
   }
   .intro header:hover {
-    opacity: .7;
+    opacity: 1;
   }
   .intro .summary {
     text-align: center;
@@ -203,7 +203,7 @@ footer a:hover {
     width: 70%;
   }
   .intro .summary:hover {
-    opacity: .7;
+    opacity: 1;
   }
   .intro .preamble {
     border-radius: 90px 0px 90px 0px;
@@ -216,7 +216,7 @@ footer a:hover {
     width: 70%;
   }
   .intro .preamble:hover {
-    opacity: .7;
+    opacity: 1;
   }
   h1, h2 {
     margin: 5px;
@@ -238,7 +238,7 @@ footer a:hover {
     width: 70%;
   }
   #zen-supporting .explanation:hover {
-    opacity: .7;
+    opacity: 1;
   }
   #zen-supporting .participation {
     text-align: center;
@@ -251,7 +251,7 @@ footer a:hover {
     width: 70%;
   }
   #zen-supporting .participation:hover {
-    opacity: .7;
+    opacity: 1;
   }
   #zen-supporting .benefits {
     text-align: center;
@@ -264,7 +264,7 @@ footer a:hover {
     width: 70%;
   }
   #zen-supporting .benefits:hover {
-    opacity: .7;
+    opacity: 1;
   }
   #zen-supporting .requirements {
     text-align: center;
@@ -277,7 +277,7 @@ footer a:hover {
     width: 70%;
   }
   #zen-supporting .requirements:hover {
-    opacity: .7;
+    opacity: 1;
   }
   #zen-supporting footer {
     border-radius: 80px 80px 0 0;
@@ -291,7 +291,7 @@ footer a:hover {
     width: 70%;
   }
   #zen-supporting footer:hover {
-    opacity: .7;
+    opacity: 1;
   }
   .sidebar {
     text-align: center;
@@ -303,7 +303,7 @@ footer a:hover {
     opacity: 0.55;
   }
   .sidebar:hover {
-    opacity: .7;
+    opacity: 1;
   }
   .sidebar ul {
     list-style: none;
