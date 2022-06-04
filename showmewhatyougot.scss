@@ -248,7 +248,7 @@ footer a {
         display: grid;
         grid-template-rows: repeat(1fr, 12);
         gap: 100px; 
-        background-image: url('./ZenGardenMaybes/pexels-fox-212324.jpg');
+        background-image: url('./ZenGardenMaybes/pexels-irina-iriser-1381679.jpg');
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-position: center;
@@ -265,22 +265,36 @@ footer a {
         // grid-template-rows: 150px 100px 240px;
 
         & header {
-            @include color-p($opGreen);
+            //@include color-p($opGreen);
             padding: 10px;
             border-radius: 0 0 90px 90px;
             text-align: center;
+            border-block: solid 10px; 
+            border-color: $opGreen;
+            background-color: aliceblue;
+            opacity: 0.55;
+            
             // grid-row: 1;
         }
         & .summary {
-            @include color-p($opPink);
+            //@include color-p($opPink);
             @include set-div();
             border-radius: 90px 90px 90px 90px;
+            border-block: solid 10px;
+            border-color: $opPink;
+            background-color: aliceblue;
+            opacity: 0.55;
             // grid-row: 3;
         }
         & .preamble {
-            @include color-p($opPurple);
+           // @include color-p($opPurple);
             border-radius: 90px 90px 90px 90px;
             @include set-div();
+            border-radius: 90px 90px 90px 90px;
+            border-block: solid 10px;
+            border-color: $opPurple;
+            background-color: aliceblue;
+            opacity: 0.55;
             // grid-row: 5;
         }
     }
@@ -295,43 +309,67 @@ footer a {
         
 
         & .explanation {
-            @include color-p($opOrange);
+           // @include color-p($opOrange);
             @include set-div();
             border-radius: 90px 90px 90px 90px;
+            border-block: solid 10px;
+            border-color: $opOrange;
+            background-color: aliceblue;
+            opacity: 0.55;
         
         }
         & .participation {
-            @include color-p($opYellow);
+           // @include color-p($opYellow);
             @include set-div();
             border-radius: 90px 90px 90px 90px;
+            border-block: solid 10px;
+            border-color: $opYellow;
+            background-color: aliceblue;
+            opacity: 0.55;
             
         }
         & .benefits {
-            @include color-p($opPurple);
+           // @include color-p($opPurple);
             @include set-div();
             border-radius: 90px 90px 90px 90px;
+            border-block: solid 10px;
+            border-color: $opPurple;
+            background-color: aliceblue;
+            opacity: 0.55;
            
         }
         & .requirements {
-            @include color-p($opPink);
+            //@include color-p($opPink);
             @include set-div();
             border-radius: 90px 90px 90px 90px;
+            border-block: solid 10px;
+            border-color: $opPink;
+            background-color: aliceblue;
+            opacity: 0.55;
             
         }
         & footer {
-            @include color-p($opGreen);
+            //@include color-p($opGreen);
             border-radius: 80px 80px 0 0;
             text-align: center;
             padding: 15px;
             border-radius: 90px 90px 90px 90px;
+            border-block: solid 10px;
+            border-color: $opGreen;
+            background-color: aliceblue;
+            opacity: 0.55;
            
         }
     }
 
     .sidebar {
-        @include color-p($opGreen);
+       // @include color-p($opGreen);
         @include set-div(); 
         border-radius: 90px 90px 90px 90px;
+        border-block: solid 10px;
+        border-color: $opGreen;
+        background-color: aliceblue;
+        opacity: 0.55;
        
     ul {
         @include listin();
