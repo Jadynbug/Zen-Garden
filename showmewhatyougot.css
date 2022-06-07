@@ -121,6 +121,7 @@ footer a:hover {
     width: 600px;
     margin-left: auto;
     margin-right: auto;
+    animation: slide-right 4000ms infinite linear;
   }
   .intro .preamble {
     text-align: center;
@@ -132,6 +133,7 @@ footer a:hover {
     width: 600px;
     margin-left: auto;
     margin-right: auto;
+    animation: slide-left 4000ms infinite linear;
   }
 
   h1, h2 {
@@ -139,7 +141,7 @@ footer a:hover {
   }
 
   #zen-supporting {
-    width: 1fr;
+    width: 100%;
   }
   #zen-supporting > * {
     padding: 10px;
@@ -158,6 +160,9 @@ footer a:hover {
     border-color: #ff7b64;
     border-radius: 0 90px 0 90px;
     width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    animation: slide-right 4000ms infinite linear;
   }
   #zen-supporting .participation {
     text-align: center;
@@ -167,6 +172,9 @@ footer a:hover {
     border-color: #ffc964;
     border-radius: 90px 0 90px 0;
     width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    animation: slide-left 4000ms infinite linear;
   }
   #zen-supporting .benefits {
     text-align: center;
@@ -176,6 +184,9 @@ footer a:hover {
     border-color: #9064ff;
     border-radius: 0 90px 0 90px;
     width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    animation: slide-right 4000ms infinite linear;
   }
   #zen-supporting .requirements {
     text-align: center;
@@ -185,6 +196,9 @@ footer a:hover {
     border-color: #fd70df;
     border-radius: 90px 0 90px 0;
     width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    animation: slide-left 4000ms infinite linear;
   }
   #zen-supporting footer {
     text-align: center;

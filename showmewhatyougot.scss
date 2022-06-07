@@ -209,21 +209,21 @@ footer a {
             width: $width;
             margin-left: auto;
             margin-right: auto;
-            //animation: slide-right 1000ms infinite linear;
+            animation: slide-right 4000ms infinite linear;
         }
         & .preamble {
             @include set-div2("middleB", $purple);
             width: $width;
             margin-left: auto;
             margin-right: auto;
-            //animation: slide-left 1000ms infinite linear;
+            animation: slide-left 4000ms infinite linear;
         }
     }
     h1, h2 {
         margin: 5px;
     }
     #zen-supporting {
-        width: 1fr;
+        width: 100%;
         &>* {
             padding: 10px;
             opacity: 0.55;
@@ -237,22 +237,30 @@ footer a {
         & .explanation {
             @include set-div2("middleA", $orange);
             width: $width;
-            //animation: slide-right 1000ms infinite linear;
+            margin-left: auto;
+            margin-right: auto;
+            animation: slide-right 4000ms infinite linear;
         }
         & .participation {
             @include set-div2("middleB", $yellow);
             width: $width;
-            //animation: slide-left 1000ms infinite linear;
+            margin-left: auto;
+            margin-right: auto;
+            animation: slide-left 4000ms infinite linear;
         }
         & .benefits {
             @include set-div2("middleA", $purple);
             width: $width;
-            //animation: slide-right 1000ms infinite linear;
+            margin-left: auto;
+            margin-right: auto;
+            animation: slide-right 4000ms infinite linear;
         }
         & .requirements {
             @include set-div2("middleB", $pink); 
             width: $width; 
-            //animation: slide-left 1000ms infinite linear;
+            margin-left: auto;
+            margin-right: auto;
+            animation: slide-left 4000ms infinite linear;
         }
         & footer {
             @include set-div2("bottom", $green);
