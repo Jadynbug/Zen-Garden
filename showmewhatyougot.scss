@@ -27,6 +27,7 @@ $opYellow: rgba(255, 201, 100, $op);
 $radius: 80px;
 //sets width for body
 $width: 600px;
+$widthB: $width + 15px;
 //sets font fam via size. large = headlines, small = body
 @mixin font-fam ($size) {
     @if ($size == "large") {
@@ -119,32 +120,20 @@ $width: 600px;
     }
 }
 
-@keyframes slide-right {
-    0% {
-        margin-left: 0;
-        margin-right: auto;
+@keyframes grow {
+    from {
+        width: $width;
     }
-    25%, 100% {
-        margin-left: auto;
-        margin-right: auto;
-    }
-    50% {
-        margin-left: auto;
-        margin-right: 0;
+    to {
+        width: $widthB;
     }
 }
-@keyframes slide-left {
-    0% {
-        margin-left: auto;
-        margin-right: 0;
+@keyframes shrink {
+    from {
+        width: $widthB;
     }
-    25%, 100% {
-        margin-left: auto;
-        margin-right: auto;
-    }
-    50% {
-        margin-left: 0;
-        margin-right: auto;
+    to {
+        width: $width
     }
 }
 
@@ -195,7 +184,6 @@ footer a {
         }
         &>*:hover {
             opacity: 1;
-            animation-play-state: paused;
         }
 
         & header {
@@ -206,17 +194,25 @@ footer a {
         }
         & .summary {
             @include set-div2("middleA", $pink);
+            animation: shrink 2s ease;
             width: $width;
             margin-left: auto;
             margin-right: auto;
-            animation: slide-right 4000ms infinite linear;
+            &:hover {
+                animation: grow 2s ease;
+                width: $widthB;
+            }
         }
         & .preamble {
             @include set-div2("middleB", $purple);
+            animation: shrink 2s ease;
             width: $width;
             margin-left: auto;
             margin-right: auto;
-            animation: slide-left 4000ms infinite linear;
+            &:hover {
+                animation: grow 2s ease;
+                width: $widthB;
+            }
         }
     }
     h1, h2 {
@@ -231,36 +227,51 @@ footer a {
         }
         &>*:hover {
             opacity: 1;
-            animation-play-state: paused;
         }
        
         & .explanation {
             @include set-div2("middleA", $orange);
+            animation: shrink 2s ease;
             width: $width;
             margin-left: auto;
             margin-right: auto;
-            animation: slide-right 4000ms infinite linear;
+            &:hover {
+                animation: grow 2s ease;  
+                width: $widthB;      
+            }
         }
         & .participation {
             @include set-div2("middleB", $yellow);
+            animation: shrink 2s ease;
             width: $width;
             margin-left: auto;
             margin-right: auto;
-            animation: slide-left 4000ms infinite linear;
+            &:hover {
+                animation: grow 2s ease;  
+                width: $widthB;      
+            }
         }
         & .benefits {
             @include set-div2("middleA", $purple);
+            animation: shrink 2s ease;
             width: $width;
             margin-left: auto;
             margin-right: auto;
-            animation: slide-right 4000ms infinite linear;
+            &:hover {
+                animation: grow 2s ease; 
+                width: $widthB;       
+            }
         }
         & .requirements {
             @include set-div2("middleB", $pink); 
+            animation: shrink 2s ease;
             width: $width; 
             margin-left: auto;
             margin-right: auto;
-            animation: slide-left 4000ms infinite linear;
+            &:hover {
+                animation: grow 2s ease; 
+                width: $widthB;       
+            }
         }
         & footer {
             @include set-div2("bottom", $green);
