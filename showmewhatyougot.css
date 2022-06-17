@@ -1,20 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Playfair+Display&family=Spectral:wght@200&family=Zen+Loop&display=swap");
-@keyframes grow {
-  from {
-    width: 600px;
-  }
-  to {
-    width: 615px;
-  }
-}
-@keyframes shrink {
-  from {
-    width: 615px;
-  }
-  to {
-    width: 600px;
-  }
-}
 body {
   font-family: "Indie Flower", "Zen Loop", "sans-serif";
 }
@@ -105,14 +89,15 @@ footer a:hover {
     border-block: solid 10px;
     border-color: #fd70df;
     border-radius: 0 90px 0 90px;
-    animation: shrink 2s ease;
     width: 600px;
     margin-left: auto;
     margin-right: auto;
+    transition: all 1s;
+    z-index: 0;
   }
   .intro .summary:hover {
-    animation: grow 2s ease;
-    width: 615px;
+    transform: scale(1.1);
+    z-index: 1;
   }
   .intro .preamble {
     text-align: center;
@@ -121,14 +106,15 @@ footer a:hover {
     border-block: solid 10px;
     border-color: #9064ff;
     border-radius: 90px 0 90px 0;
-    animation: shrink 2s ease;
     width: 600px;
     margin-left: auto;
     margin-right: auto;
+    transition: all 1s;
+    z-index: 0;
   }
   .intro .preamble:hover {
-    animation: grow 2s ease;
-    width: 615px;
+    transform: scale(1.1);
+    z-index: 1;
   }
 
   h1, h2 {
@@ -153,14 +139,15 @@ footer a:hover {
     border-block: solid 10px;
     border-color: #ff7b64;
     border-radius: 0 90px 0 90px;
-    animation: shrink 2s ease;
     width: 600px;
     margin-left: auto;
     margin-right: auto;
+    transition: all 1s;
+    z-index: 0;
   }
   #zen-supporting .explanation:hover {
-    animation: grow 2s ease;
-    width: 615px;
+    transform: scale(1.1);
+    z-index: 1;
   }
   #zen-supporting .participation {
     text-align: center;
@@ -169,14 +156,15 @@ footer a:hover {
     border-block: solid 10px;
     border-color: #ffc964;
     border-radius: 90px 0 90px 0;
-    animation: shrink 2s ease;
     width: 600px;
     margin-left: auto;
     margin-right: auto;
+    transition: all 1s;
+    z-index: 0;
   }
   #zen-supporting .participation:hover {
-    animation: grow 2s ease;
-    width: 615px;
+    transform: scale(1.1);
+    z-index: 1;
   }
   #zen-supporting .benefits {
     text-align: center;
@@ -185,14 +173,15 @@ footer a:hover {
     border-block: solid 10px;
     border-color: #9064ff;
     border-radius: 0 90px 0 90px;
-    animation: shrink 2s ease;
     width: 600px;
     margin-left: auto;
     margin-right: auto;
+    transition: all 1s;
+    z-index: 0;
   }
   #zen-supporting .benefits:hover {
-    animation: grow 2s ease;
-    width: 615px;
+    transform: scale(1.1);
+    z-index: 1;
   }
   #zen-supporting .requirements {
     text-align: center;
@@ -201,14 +190,15 @@ footer a:hover {
     border-block: solid 10px;
     border-color: #fd70df;
     border-radius: 90px 0 90px 0;
-    animation: shrink 2s ease;
     width: 600px;
     margin-left: auto;
     margin-right: auto;
+    transition: all 1s;
+    z-index: 0;
   }
   #zen-supporting .requirements:hover {
-    animation: grow 2s ease;
-    width: 615px;
+    transform: scale(1.1);
+    z-index: 1;
   }
   #zen-supporting footer {
     text-align: center;
@@ -218,6 +208,7 @@ footer a:hover {
     border-color: #64ffbc;
     border-radius: 90px 90px 0 0;
     padding: 15px;
+    z-index: 0;
   }
 
   .sidebar {

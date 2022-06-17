@@ -120,23 +120,6 @@ $widthB: $width + 15px;
     }
 }
 
-@keyframes grow {
-    from {
-        width: $width;
-    }
-    to {
-        width: $widthB;
-    }
-}
-@keyframes shrink {
-    from {
-        width: $widthB;
-    }
-    to {
-        width: $width
-    }
-}
-
 //css shared between all sized screen.
 //set things like font and color for divs so they match
 body {
@@ -194,24 +177,26 @@ footer a {
         }
         & .summary {
             @include set-div2("middleA", $pink);
-            animation: shrink 2s ease;
             width: $width;
             margin-left: auto;
             margin-right: auto;
+            transition: all 1s;
+            z-index: 0;
             &:hover {
-                animation: grow 2s ease;
-                width: $widthB;
+                transform: scale(1.1);
+                z-index: 1;
             }
         }
         & .preamble {
             @include set-div2("middleB", $purple);
-            animation: shrink 2s ease;
             width: $width;
             margin-left: auto;
             margin-right: auto;
+            transition: all 1s;
+            z-index: 0;
             &:hover {
-                animation: grow 2s ease;
-                width: $widthB;
+                transform: scale(1.1);
+                z-index: 1;
             }
         }
     }
@@ -231,51 +216,56 @@ footer a {
        
         & .explanation {
             @include set-div2("middleA", $orange);
-            animation: shrink 2s ease;
             width: $width;
             margin-left: auto;
             margin-right: auto;
+            transition: all 1s;
+            z-index: 0;
             &:hover {
-                animation: grow 2s ease;  
-                width: $widthB;      
+                transform: scale(1.1);
+                z-index: 1;
             }
         }
         & .participation {
             @include set-div2("middleB", $yellow);
-            animation: shrink 2s ease;
             width: $width;
             margin-left: auto;
             margin-right: auto;
+            transition: all 1s;
+            z-index: 0;
             &:hover {
-                animation: grow 2s ease;  
-                width: $widthB;      
+                transform: scale(1.1);
+                z-index: 1;
             }
         }
         & .benefits {
             @include set-div2("middleA", $purple);
-            animation: shrink 2s ease;
             width: $width;
             margin-left: auto;
             margin-right: auto;
+            transition: all 1s;
+            z-index: 0;
             &:hover {
-                animation: grow 2s ease; 
-                width: $widthB;       
+                transform: scale(1.1);
+                z-index: 1;
             }
         }
         & .requirements {
             @include set-div2("middleB", $pink); 
-            animation: shrink 2s ease;
             width: $width; 
             margin-left: auto;
             margin-right: auto;
+            transition: all 1s;
+            z-index: 0;
             &:hover {
-                animation: grow 2s ease; 
-                width: $widthB;       
+                transform: scale(1.1);
+                z-index: 1;
             }
         }
         & footer {
             @include set-div2("bottom", $green);
             padding: 15px;
+            z-index: 0;
         }
     }
 
