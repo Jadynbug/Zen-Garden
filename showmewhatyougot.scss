@@ -15,6 +15,7 @@ $pink: #fd70df;
 $purple: #9064ff;
 $orange: #ff7b64;
 $yellow: #ffc964;
+$textBackground: aliceblue;
 //opacity
 $op: 0.5;
 //colors with opacity
@@ -25,8 +26,11 @@ $opOrange: rgba(255, 123, 100, $op);
 $opYellow: rgba(255, 201, 100, $op);
 //border radius
 $radius: 80px;
+$topLeft-bottomRight: 0px 90px 0px 90px;
+$topRight-bottomLeft: 90px 0px 90px 0px;
 //sets width for body
 $width: 600px;
+$small-width: 70%;
 $widthB: $width + 15px;
 //sets font fam via size. large = headlines, small = body
 @mixin font-fam ($size) {
@@ -102,15 +106,16 @@ $widthB: $width + 15px;
     background-color: aliceblue;
     border-block: solid 10px;
     border-color: $arg2;
+    
 
     @if($arg == "top") {
         border-radius: 0 0 90px 90px;
     }
     @if($arg == "middleA") {
-        border-radius: 0 90px 0 90px;
+        border-radius: $topLeft-bottomRight;
     }
     @if($arg == "middleB") {
-        border-radius: 90px 0 90px 0;
+        border-radius: $topRight-bottomLeft;
     }
     @if($arg == "side") {
         border-radius: 90px 0 0 90px;
@@ -119,7 +124,27 @@ $widthB: $width + 15px;
         border-radius: 90px 90px 0 0;
     }
 }
-
+//div set up mixin for small screens
+@mixin set-div-small{
+    text-align: center;
+    //border-radius: $radius;
+    border-block: solid 10px;
+    background-color: $textBackground;
+    padding: 10px;
+    width: $small-width;
+    margin-left: auto;
+    margin-right: auto;
+    transition: all 1s;
+    z-index: 0;
+    opacity: 0.55;
+    
+}
+//mix in for hover effect 
+@mixin hover-effect{
+    transform: scale(1.1);
+    z-index: 1;
+    opacity: 1;
+}
 //css shared between all sized screen.
 //set things like font and color for divs so they match
 body {
@@ -308,157 +333,120 @@ footer a {
   
     .intro {
        
-        // grid-row: 1/3;
-
         display: grid;
         grid-gap: 100px;
         justify-items: center;
-        // grid-template-columns: 1fr 1fr 300px;
-        // grid-template-rows: 150px 100px 240px;
-
-        & header {
-            //@include color-p($opGreen);
-            padding: 10px;
-            border-radius: 0 0 90px 90px;
-            text-align: center;
-            border-block: solid 10px; 
-            border-color: $green;
-            background-color: aliceblue;
-            opacity: 0.55;
-            width: 100%;
-            &:hover {
-                opacity:1;
-            }
-            // grid-row: 1;
-        }
-        & .summary {
-            //@include color-p($opPink);
-            @include set-div();
-            border-radius: 0px 90px 0px 90px;
-            border-block: solid 10px;
-            border-color: $pink;
-            background-color: aliceblue;
-            opacity: 0.55;
-            width: 70%;
-            &:hover {
-                opacity:1;
-            }
-            // grid-row: 3;
-        }
-        & .preamble {
-           // @include color-p($opPurple);
-            border-radius: 90px 0px 90px 0px;
-            @include set-div();
-            border-block: solid 10px;
-            border-color: $purple;
-            background-color: aliceblue;
-            opacity: 0.55;
-            width: 70%;
-            &:hover {
-                opacity: 1;
-            }
-            // grid-row: 5;
-        }
+        
     }
+
+        header {
+            @include set-div-small();
+           
+            width: 100%;
+            border-radius: 0 0 90px 90px;
+            border-color: $green;
+            &:hover {
+                @include hover-effect();
+            }
+           
+        }
+        .summary {
+           
+            @include set-div-small();
+            border-radius: $topLeft-bottomRight;
+            border-color: $pink;
+            &:hover {
+                @include hover-effect();
+            }
+        }
+         .preamble {
+            @include set-div-small();
+            border-radius: $topRight-bottomLeft;
+            border-color: $purple;
+                     
+            &:hover {
+                @include hover-effect();
+            }
+        
+        }
+
+    
     h1, h2 {
         margin: 5px;
     }
     #zen-supporting {
-        // grid-row: 7/13;
 
         display: grid;
         grid-gap: 100px;
         justify-items: center;
-        
-
-        & .explanation {
-           // @include color-p($opOrange);
-            @include set-div();
-            border-radius: 0px 90px 0px 90px;
-            border-block: solid 10px;
-            border-color: $orange;
-            background-color: aliceblue;
-            opacity: 0.55;
-            width: 70%;
-            &:hover {
-                opacity:1;
-            }
-        
-        }
-        & .participation {
-           // @include color-p($opYellow);
-            @include set-div();
-            border-radius: 90px 0px 90px 0px;
-            border-block: solid 10px;
-            border-color: $yellow;
-            background-color: aliceblue;
-            opacity: 0.55;
-            width: 70%;
-            &:hover {
-                opacity: 1;
-            }
-            
-        }
-        & .benefits {
-           // @include color-p($opPurple);
-            @include set-div();
-            border-radius: 0px 90px 0px 90px;
-            border-block: solid 10px;
-            border-color: $purple;
-            background-color: aliceblue;
-            opacity: 0.55;
-            width: 70%;
-            &:hover {
-                opacity:1;
-            }
-           
-        }
-        & .requirements {
-            //@include color-p($opPink);
-            @include set-div();
-            border-radius: 90px 0px 90px 0px;
-            border-block: solid 10px;
-            border-color: $pink;
-            background-color: aliceblue;
-            opacity: 0.55;
-            width: 70%;
-            &:hover {
-                opacity:1;
-            }
-            
-        }
-        & footer {
-            //@include color-p($opGreen);
-            border-radius: 80px 80px 0 0;
-            text-align: center;
-            padding: 15px;
-            border-radius: 0px 90px 0px 90px;
-            border-block: solid 10px;
-            border-color: $green;
-            background-color: aliceblue;
-            opacity: 0.55;
-            width: 70%;
-            &:hover {
-                opacity:1;
-            }
-           
-        }
     }
 
+         .explanation {
+            @include set-div-small();
+            border-radius: $topLeft-bottomRight;
+            border-color: $orange;
+           
+            &:hover {
+                @include hover-effect();
+            }
+        
+        }
+        .participation {
+           
+            @include set-div-small();
+            border-radius: $topRight-bottomLeft;
+            border-color: $yellow;
+           
+            &:hover {
+                @include hover-effect();
+            }
+            
+        }
+         .benefits {
+            @include set-div-small();
+            border-radius: $topLeft-bottomRight;
+            border-color: $purple;
+            &:hover {
+                @include hover-effect();
+            }
+           
+        }
+        .requirements {
+        
+            @include set-div-small();
+            border-radius: $topRight-bottomLeft;
+            border-color: $pink;
+        
+            &:hover {
+                @include hover-effect();
+            }
+            
+        }
+        footer { 
+            @include set-div-small(); 
+            border-radius: $topLeft-bottomRight;
+            border-color: $green;
+        
+            &:hover {
+                @include hover-effect();
+            }
+           
+        }
+    
+
     .sidebar {
-       // @include color-p($opGreen);
-        @include set-div(); 
+       
+        @include set-div-small(); 
         border-radius: 0px 0px 0px 0px;
-        border-block: solid 10px;
         border-color: $green;
-        background-color: aliceblue;
-        opacity: 0.55;
+        width: 100%; 
+       
         &:hover {
-            opacity:1;
+            @include hover-effect();
         }
        
     ul {
         @include listin();
     }
-}
+} 
 }
