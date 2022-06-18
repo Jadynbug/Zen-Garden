@@ -106,7 +106,7 @@ footer a:hover {
     -webkit-transition: all 1s;
     transition: all 1s;
     z-index: 0;
-    border-radius: 0px 90px 0px 90px;
+    border-radius: 40px 80px 40px 80px;
   }
   .intro .summary:hover {
     -webkit-transform: scale(1.1);
@@ -126,7 +126,7 @@ footer a:hover {
     -webkit-transition: all 1s;
     transition: all 1s;
     z-index: 0;
-    border-radius: 90px 0px 90px 0px;
+    border-radius: 80px 40px 80px 40px;
   }
   .intro .preamble:hover {
     -webkit-transform: scale(1.1);
@@ -160,7 +160,7 @@ footer a:hover {
     -webkit-transition: all 1s;
     transition: all 1s;
     z-index: 0;
-    border-radius: 0px 90px 0px 90px;
+    border-radius: 40px 80px 40px 80px;
   }
   #zen-supporting .explanation:hover {
     -webkit-transform: scale(1.1);
@@ -180,7 +180,7 @@ footer a:hover {
     -webkit-transition: all 1s;
     transition: all 1s;
     z-index: 0;
-    border-radius: 90px 0px 90px 0px;
+    border-radius: 80px 40px 80px 40px;
   }
   #zen-supporting .participation:hover {
     -webkit-transform: scale(1.1);
@@ -200,7 +200,7 @@ footer a:hover {
     -webkit-transition: all 1s;
     transition: all 1s;
     z-index: 0;
-    border-radius: 0px 90px 0px 90px;
+    border-radius: 40px 80px 40px 80px;
   }
   #zen-supporting .benefits:hover {
     -webkit-transform: scale(1.1);
@@ -220,7 +220,7 @@ footer a:hover {
     -webkit-transition: all 1s;
     transition: all 1s;
     z-index: 0;
-    border-radius: 90px 0px 90px 0px;
+    border-radius: 80px 40px 80px 40px;
   }
   #zen-supporting .requirements:hover {
     -webkit-transform: scale(1.1);
@@ -303,13 +303,13 @@ footer a:hover {
     border-block: solid 10px;
     background-color: aliceblue;
     padding: 10px;
-    width: 70%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
     -webkit-transition: 1s ease;
     transition: 1s ease;
     z-index: 0;
-    opacity: 0.55;
+    opacity: 0.85;
     width: 100%;
     border-radius: 0 0 90px 90px;
     border-color: #64ffbc;
@@ -325,14 +325,14 @@ footer a:hover {
     border-block: solid 10px;
     background-color: aliceblue;
     padding: 10px;
-    width: 70%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
     -webkit-transition: 1s ease;
     transition: 1s ease;
     z-index: 0;
-    opacity: 0.55;
-    border-radius: 0px 90px 0px 90px;
+    opacity: 0.85;
+    border-radius: 40px 80px 40px 80px;
     border-color: #fd70df;
   }
   .summary:hover {
@@ -349,14 +349,14 @@ footer a:hover {
     border-block: solid 10px;
     background-color: aliceblue;
     padding: 10px;
-    width: 70%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
     -webkit-transition: 1s ease;
     transition: 1s ease;
     z-index: 0;
-    opacity: 0.55;
-    border-radius: 90px 0px 90px 0px;
+    opacity: 0.85;
+    border-radius: 80px 40px 80px 40px;
     border-color: #9064ff;
   }
   .preamble:hover {
@@ -384,14 +384,14 @@ footer a:hover {
     border-block: solid 10px;
     background-color: aliceblue;
     padding: 10px;
-    width: 70%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
     -webkit-transition: 1s ease;
     transition: 1s ease;
     z-index: 0;
-    opacity: 0.55;
-    border-radius: 0px 90px 0px 90px;
+    opacity: 0.85;
+    border-radius: 40px 80px 40px 80px;
     border-color: #ff7b64;
   }
   .explanation:hover {
@@ -410,14 +410,14 @@ footer a:hover {
     border-block: solid 10px;
     background-color: aliceblue;
     padding: 10px;
-    width: 70%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
     -webkit-transition: 1s ease;
     transition: 1s ease;
     z-index: 0;
-    opacity: 0.55;
-    border-radius: 90px 0px 90px 0px;
+    opacity: 0.85;
+    border-radius: 80px 40px 80px 40px;
     border-color: #ffc964;
   }
   .participation:hover {
@@ -436,14 +436,14 @@ footer a:hover {
     border-block: solid 10px;
     background-color: aliceblue;
     padding: 10px;
-    width: 70%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
     -webkit-transition: 1s ease;
     transition: 1s ease;
     z-index: 0;
-    opacity: 0.55;
-    border-radius: 0px 90px 0px 90px;
+    opacity: 0.85;
+    border-radius: 40px 80px 40px 80px;
     border-color: #9064ff;
   }
   .benefits:hover {
@@ -462,14 +462,14 @@ footer a:hover {
     border-block: solid 10px;
     background-color: aliceblue;
     padding: 10px;
-    width: 70%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
     -webkit-transition: 1s ease;
     transition: 1s ease;
     z-index: 0;
-    opacity: 0.55;
-    border-radius: 90px 0px 90px 0px;
+    opacity: 0.85;
+    border-radius: 80px 40px 80px 40px;
     border-color: #fd70df;
   }
   .requirements:hover {
@@ -488,14 +488,14 @@ footer a:hover {
     border-block: solid 10px;
     background-color: aliceblue;
     padding: 10px;
-    width: 70%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
     -webkit-transition: 1s ease;
     transition: 1s ease;
     z-index: 0;
-    opacity: 0.55;
-    border-radius: 0px 90px 0px 90px;
+    opacity: 0.85;
+    border-radius: 40px 80px 40px 80px;
     border-color: #64ffbc;
   }
   footer:hover {
@@ -509,13 +509,13 @@ footer a:hover {
     border-block: solid 10px;
     background-color: aliceblue;
     padding: 10px;
-    width: 70%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
     -webkit-transition: 1s ease;
     transition: 1s ease;
     z-index: 0;
-    opacity: 0.55;
+    opacity: 0.85;
     border-radius: 0px 0px 0px 0px;
     border-color: #64ffbc;
     width: 100%;

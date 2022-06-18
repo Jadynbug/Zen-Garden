@@ -26,11 +26,11 @@ $opOrange: rgba(255, 123, 100, $op);
 $opYellow: rgba(255, 201, 100, $op);
 //border radius
 $radius: 80px;
-$topLeft-bottomRight: 0px 90px 0px 90px;
-$topRight-bottomLeft: 90px 0px 90px 0px;
+$topLeft-bottomRight: 40px 80px 40px 80px;
+$topRight-bottomLeft: 80px 40px 80px 40px;
 //sets width for body
 $width: 600px;
-$small-width: 70%;
+$small-width: 80%;
 $widthB: $width + 15px;
 //sets font fam via size. large = headlines, small = body
 @mixin font-fam ($size) {
@@ -141,7 +141,7 @@ $widthB: $width + 15px;
     margin-right: auto;
     transition: 1s ease;
     z-index: 0;
-    opacity: 0.55;
+    opacity: 0.85;
     
 }
 //mix in for hover effect 
