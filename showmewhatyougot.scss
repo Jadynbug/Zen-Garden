@@ -103,7 +103,7 @@ $widthB: $width + 15px;
 @mixin set-div2 ($arg, $arg2) {
     text-align: center;
     padding: 10px;
-    background-color: aliceblue;
+    background-color: $textBackground;
     border-block: solid 10px;
     border-color: $arg2;
     
