@@ -302,7 +302,7 @@ footer a {
     .page-wrapper {
         display: grid;
         grid-template-rows: repeat(1fr, 12);
-        gap: 100px; 
+        gap: 50px; 
         background-image: url('./ZenGardenMaybes/pexels-sam-willis-3934512.jpg');
         //background-image: url('./ZenGardenMaybes/pexels-irina-iriser-1381679.jpg');
         background-repeat: no-repeat;
@@ -318,7 +318,7 @@ footer a {
     .intro {
        
         display: grid;
-        grid-gap: 100px;
+        gap: 100px;
         justify-items: center;
         
     }
@@ -368,7 +368,7 @@ footer a {
     #zen-supporting {
 
         display: grid;
-        grid-gap: 100px;
+        gap: 100px; 
         justify-items: center;
     }
 
@@ -429,7 +429,7 @@ footer a {
             @include set-div-small(); 
             border-radius: $topLeft-bottomRight;
             border-color: $green;
-        
+           
             &:hover {
                 @include hover-effect();
             }
