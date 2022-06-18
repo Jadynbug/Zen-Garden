@@ -184,8 +184,6 @@ footer a {
         background-attachment: fixed;
         background-position: center;
         background-size: 100vw 100vh;
-
-
     }
     .page-wrapper {
        display: grid;
@@ -193,6 +191,7 @@ footer a {
        grid-template-rows: repeat(auto-fill, minmax(100px, 680px));
        justify-items: center;
        grid-column-gap: 15px;
+       
     }
     .intro {
         &>* {
