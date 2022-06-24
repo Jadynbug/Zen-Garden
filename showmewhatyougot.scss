@@ -96,7 +96,6 @@ $widthB: $width + 15px;
 //set base for large screen div
 @mixin set-div {
     text-align: center;
-    //border-radius: $radius;
     padding: 10px;
 }
 //set up divs with background, border, radius, etc
@@ -195,7 +194,7 @@ footer a {
        grid-template-rows: repeat(auto-fill, minmax(100px, 680px));
        justify-items: center;
        grid-column-gap: 15px;
-       
+       width: 97.7vw;       
     }
     .intro {
         &>* {
