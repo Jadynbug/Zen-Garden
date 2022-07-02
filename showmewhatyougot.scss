@@ -298,9 +298,9 @@ footer a {
 }
 //for medium screens
 @media only screen and (max-width: 1399px) and (min-width: 701px) {
-    @media only screen and (min-width: 1400px) {
+
         body {
-            background-image: url('./ZenGardenMaybes/pexels-fox-212324.jpg');
+            background-image: url('./ZenGardenMaybes/pexels-benjamin-suter-3617500.jpg');
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-position: center;
@@ -325,20 +325,20 @@ footer a {
             }
     
             & header {
-               @include set-div2("top", $green);
+               @include set-div2("top", $pink);
                width: 80vw;
                z-index: 3;
     
             }
             & .summary {
-                @include set-div2("middleA", $pink);
+                @include set-div2("middleA", $purple);
                
                 &:hover {
                     @include hover-effect();
                 }
             }
             & .preamble {
-                @include set-div2("middleB", $purple);
+                @include set-div2("middleB", $orange);
                 
                 &:hover {
                     @include hover-effect();
@@ -360,7 +360,7 @@ footer a {
             }
            
             & .explanation {
-                @include set-div2("middleA", $orange);
+                @include set-div2("middleA", $green);
                
                 &:hover {
                     @include hover-effect();
@@ -388,7 +388,7 @@ footer a {
                 }
             }
             & footer {
-                @include set-div2("bottom", $green);
+                @include set-div2("bottom", $yellow);
                 padding: 15px;
                 z-index: 0;
                 
@@ -396,7 +396,7 @@ footer a {
         }
     
         .sidebar {
-            @include set-div2("side", $green);
+            @include set-div2("side", $pink);
             width: 200px;
             padding: 5px; 
             grid-column: 2;
@@ -413,8 +413,10 @@ footer a {
             }
         }
     
+ 
     }
-}
+
+
 //for little screens
 @media only screen and (max-width: 700px) {
     .page-wrapper {
