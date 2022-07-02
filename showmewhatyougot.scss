@@ -297,8 +297,187 @@ footer a {
 
 }
 //for medium screens
-@media only screen and (max-width: 1399px) and (min-width: 800px) {
+@media only screen and (max-width: 1399px) and (min-width: 701px) {
+    .page-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 200px;
+        grid-template-rows: repeat(auto-fill, minmax(100px, 680px));
+        justify-items: center;
+        grid-column-gap: 15px;
+        width: 97.7vw;       
+     } 
+     .intro {
+       
+        display: grid;
+        gap: 100px;
+        justify-items: center;
+        
+    }
+
+        header {
+            @include set-div-small();
+           
+            width: 100%;
+            border-radius: 0 0 90px 90px;
+            border-color: $green;
+            @include hover-effect();
+            // &:hover {
+                
+            // }
+           
+        }
+        .summary {
+           
+            @include set-div-small();
+            border-radius: $topLeft-bottomRight;
+            border-color: $pink;
+            @include hover-effect();
+            // &:hover {
+                
+            // }
+        }
+        .summary p{
+            display: block; 
+        }
+         .preamble {
+            @include set-div-small();
+            border-radius: $topRight-bottomLeft;
+            border-color: $purple;
+                     
+            &:hover {
+                @include hover-effect();
+               
+            }
+        
+        }
+        .preamble:hover p {
+            @include unroll(); 
+        }
+
     
+    h1, h2 {
+        margin: 5px;
+    }
+    #zen-supporting {
+
+        display: grid;
+        gap: 100px; 
+        justify-items: center;
+    }
+
+         .explanation {
+            @include set-div-small();
+            border-radius: $topLeft-bottomRight;
+            border-color: $orange;
+           
+            &:hover {
+                @include hover-effect();
+            }
+        
+        }
+        .explanation:hover p {
+            @include unroll(); 
+        }
+        .participation {
+           
+            @include set-div-small();
+            border-radius: $topRight-bottomLeft;
+            border-color: $yellow;
+           
+            &:hover {
+                @include hover-effect();
+            }
+            
+        }
+        .participation:hover p {
+            @include unroll(); 
+        }
+         .benefits {
+            @include set-div-small();
+            border-radius: $topLeft-bottomRight;
+            border-color: $purple;
+            &:hover {
+                @include hover-effect();
+            }
+           
+        }
+        .benefits:hover p {
+            @include unroll(); 
+        }
+        .requirements {
+        
+            @include set-div-small();
+            border-radius: $topRight-bottomLeft;
+            border-color: $pink;
+        
+            &:hover {
+                @include hover-effect();
+            }
+            
+        }
+        .requirements:hover p {
+            @include unroll(); 
+        }
+        footer { 
+            @include set-div-small(); 
+            border-radius: $topLeft-bottomRight;
+            border-color: $green;
+            display: none; 
+            @include hover-effect();
+           
+            // &:hover {
+                
+            // }
+           
+        }
+        
+    
+
+    .sidebar {
+       
+        @include set-div-small(); 
+        border-color: $green;
+        border-radius: 0px 0px 0px 0px;
+        // background-color: $green;
+        width: 100%; 
+        height: 20px; 
+        overflow: none;
+        transition: .2s; 
+        & h3 {
+            display: none;
+        }
+
+       
+        &:hover {
+            @include set-div-small(); 
+            @include hover-effect();
+            
+            position:fixed; 
+            top: 10px;
+           
+            
+            width: 90%; 
+            height: auto; 
+            background-color: $textBackground;
+            & ul{
+                @include unroll(); 
+            }
+            & h3 {
+                @include unroll(); 
+            }
+            
+        }
+       
+    ul {
+        @include listin();
+        display: none; 
+      
+    }
+    
+       
+} 
+
+
 }
 
 //for little screens
