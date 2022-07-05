@@ -30,7 +30,7 @@ $topLeft-bottomRight: 10px 20px 10px 20px;
 $topRight-bottomLeft: 20px 10px 20px 10px;
 //sets width for body
 $width: 600px;
-$small-width: 80%;
+$small-width: 70vw;
 $widthB: $width + 15px;
 //sets font fam via size. large = headlines, small = body
 @mixin font-fam ($size) {
@@ -162,6 +162,8 @@ $widthB: $width + 15px;
 //set things like font and color for divs so they match
 body {
     @include font-fam(small);
+   
+   
 }
 h1, h2, h3 {
     @include font-fam(large);
@@ -190,13 +192,18 @@ footer a {
     }
     .page-wrapper {
        display: grid;
-       grid-template-columns: 1fr 200px;
-       grid-template-rows: repeat(auto-fill, minmax(100px, 680px));
+       grid-template-columns: 1fr 300px;
+    //    grid-template-rows: repeat(auto-fill, minmax(100px, 680px));
+       grid-template-rows: auto auto;
        justify-items: center;
        grid-column-gap: 15px;
-       width: 97.7vw;       
+       width: 97.7vw;    
+          
     }
     .intro {
+        display: grid; 
+        height:fit-content;
+        overflow-x: none;
         &>* {
             padding: 10px;
             opacity: 0.55;
@@ -231,6 +238,8 @@ footer a {
         margin: 5px;
     }
     #zen-supporting {
+        display: grid; 
+        height:fit-content;
         width: 100%;
         &>* {
             padding: 10px;
@@ -309,12 +318,14 @@ footer a {
         .page-wrapper {
            display: grid;
            grid-template-columns: 1fr 200px;
-           grid-template-rows: repeat(auto-fill, minmax(100px, 680px));
+           grid-template-rows: auto auto;
+        //    grid-template-rows: repeat(auto-fill, minmax(100px, 680px));
            justify-items: center;
            grid-column-gap: 15px;
            width: 97.7vw;       
         }
         .intro {
+            overflow-x: none;
             &>* {
                 padding: 10px;
                 opacity: 0.55;
