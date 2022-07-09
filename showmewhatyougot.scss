@@ -430,10 +430,14 @@ footer a {
 
 //for little screens
 @media only screen and (max-width: 700px) {
+    body{
+        overflow-x: hidden;
+    }
+  
     .page-wrapper {
         display: grid;
-        grid-template-rows: repeat(1fr, 12);
         gap: 50px; 
+        overflow-x: hidden;
         
         background-image: url('./ZenGardenMaybes/pexels-sam-willis-3934512.jpg');
         //background-image: url('./ZenGardenMaybes/pexels-irina-iriser-1381679.jpg');
@@ -452,13 +456,16 @@ footer a {
         display: grid;
         gap: 100px;
         justify-items: center;
+        height:fit-content;
+
         
     }
 
         header {
             @include set-div-small();
-           
-            width: 100%;
+            margin:0; 
+            padding: 0;
+            width: 90vw;
             border-radius: 0 0 90px 90px;
             border-color: $green;
             @include hover-effect();
