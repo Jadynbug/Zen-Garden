@@ -140,7 +140,7 @@ $widthB: $width + 15px;
     margin-right: auto;
     transition: .2s ease;
     z-index: 0;
-    opacity: 0.85;
+    opacity: 0.55;
     
 }
 //mix in for hover effect 
@@ -436,7 +436,7 @@ footer a {
   
     .page-wrapper {
         display: grid;
-        gap: 50px; 
+        gap: 100px; 
         overflow-x: hidden;
         
         background-image: url('./ZenGardenMaybes/pexels-sam-willis-3934512.jpg');
@@ -457,6 +457,8 @@ footer a {
         gap: 100px;
         justify-items: center;
         height:fit-content;
+        padding:10px; 
+   
 
         
     }
@@ -468,10 +470,10 @@ footer a {
             width: 90vw;
             border-radius: 0 0 90px 90px;
             border-color: $green;
-            @include hover-effect();
-            // &:hover {
-                
-            // }
+            &:hover {
+                opacity: 1;
+               
+            }
            
         }
         .summary {
@@ -479,10 +481,11 @@ footer a {
             @include set-div-small();
             border-radius: $topLeft-bottomRight;
             border-color: $pink;
-            @include hover-effect();
-            // &:hover {
-                
-            // }
+            &:hover {
+                @include hover-effect(); 
+               
+            }
+          
         }
         .summary p{
             display: block; 

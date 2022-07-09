@@ -527,7 +527,7 @@ footer a:hover {
   .page-wrapper {
     display: -ms-grid;
     display: grid;
-    gap: 50px;
+    gap: 100px;
     overflow-x: hidden;
     background-image: url("./ZenGardenMaybes/pexels-sam-willis-3934512.jpg");
     background-repeat: no-repeat;
@@ -546,6 +546,7 @@ footer a:hover {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
+    padding: 10px;
   }
   header {
     text-align: center;
@@ -558,15 +559,14 @@ footer a:hover {
     -webkit-transition: .2s ease;
     transition: .2s ease;
     z-index: 0;
-    opacity: 0.85;
+    opacity: 0.55;
     margin: 0;
     padding: 0;
     width: 90vw;
     border-radius: 0 0 90px 90px;
     border-color: #64ffbc;
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-    z-index: 1;
+  }
+  header:hover {
     opacity: 1;
   }
   .summary {
@@ -580,9 +580,11 @@ footer a:hover {
     -webkit-transition: .2s ease;
     transition: .2s ease;
     z-index: 0;
-    opacity: 0.85;
+    opacity: 0.55;
     border-radius: 10px 20px 10px 20px;
     border-color: #fd70df;
+  }
+  .summary:hover {
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
     z-index: 1;
@@ -602,7 +604,7 @@ footer a:hover {
     -webkit-transition: .2s ease;
     transition: .2s ease;
     z-index: 0;
-    opacity: 0.85;
+    opacity: 0.55;
     border-radius: 20px 10px 20px 10px;
     border-color: #9064ff;
   }
@@ -637,7 +639,7 @@ footer a:hover {
     -webkit-transition: .2s ease;
     transition: .2s ease;
     z-index: 0;
-    opacity: 0.85;
+    opacity: 0.55;
     border-radius: 10px 20px 10px 20px;
     border-color: #ff7b64;
   }
@@ -663,7 +665,7 @@ footer a:hover {
     -webkit-transition: .2s ease;
     transition: .2s ease;
     z-index: 0;
-    opacity: 0.85;
+    opacity: 0.55;
     border-radius: 20px 10px 20px 10px;
     border-color: #ffc964;
   }
@@ -689,7 +691,7 @@ footer a:hover {
     -webkit-transition: .2s ease;
     transition: .2s ease;
     z-index: 0;
-    opacity: 0.85;
+    opacity: 0.55;
     border-radius: 10px 20px 10px 20px;
     border-color: #9064ff;
   }
@@ -715,7 +717,7 @@ footer a:hover {
     -webkit-transition: .2s ease;
     transition: .2s ease;
     z-index: 0;
-    opacity: 0.85;
+    opacity: 0.55;
     border-radius: 20px 10px 20px 10px;
     border-color: #fd70df;
   }
@@ -741,7 +743,7 @@ footer a:hover {
     -webkit-transition: .2s ease;
     transition: .2s ease;
     z-index: 0;
-    opacity: 0.85;
+    opacity: 0.55;
     border-radius: 10px 20px 10px 20px;
     border-color: #64ffbc;
     display: none;
@@ -761,7 +763,7 @@ footer a:hover {
     -webkit-transition: .2s ease;
     transition: .2s ease;
     z-index: 0;
-    opacity: 0.85;
+    opacity: 0.55;
     border-color: #64ffbc;
     border-radius: 0px 0px 0px 0px;
     width: 100%;
@@ -784,7 +786,7 @@ footer a:hover {
     -webkit-transition: .2s ease;
     transition: .2s ease;
     z-index: 0;
-    opacity: 0.85;
+    opacity: 0.55;
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
     z-index: 1;
