@@ -1,13 +1,13 @@
 @charset "utf-8";
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Playfair+Display&family=Spectral:wght@200&family=Zen+Loop&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Playfair+Display&family=Spectral:wght@200&family=Zen+Loop&family=Playfair+Display+SC:wght@400;700&family=Quicksand&display=swap');
 
 //fonts
 $indie: "Indie Flower";
 $zen: "Zen Loop";
-$spectal: "Spectral";
+$spectral: "Spectral";
 $playfair: "Playfair Display";
 //font lists
-$serif-font: $spectal, $playfair, "serif";
+$serif-font: $spectral, $playfair, "serif";
 $sans-serif-font: $indie, $zen, "sans-serif";
 //colors
 $green: #64ffbc;
@@ -433,8 +433,14 @@ footer a {
 
 //for little screens
 @media only screen and (max-width: 700px) {
+  
+    h1, h2, h3 {
+      // font-family: 'Playfair Display SC', serif;
+      font-family: 'Playfair Display', serif;
+    }
     body{
         overflow-x: hidden;
+        font-family: 'Quicksand', sans-serif;
     }
   
     .page-wrapper {
