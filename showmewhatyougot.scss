@@ -26,11 +26,11 @@ $opOrange: rgba(255, 123, 100, $op);
 $opYellow: rgba(255, 201, 100, $op);
 //border radius
 $radius: 80px;
-$topLeft-bottomRight: 10px 60px 10px 60px;
-$topRight-bottomLeft: 60px 10px 60px 10px;
+$topLeft-bottomRight: 10px 10px 10px 10px;
+$topRight-bottomLeft: 10px 10px 10px 10px;
 //sets width for body
 $width: 600px;
-$small-width: 70vw;
+$small-width: 90%;
 $widthB: $width + 15px;
 //sets font fam via size. large = headlines, small = body
 @mixin font-fam ($size) {
@@ -103,7 +103,7 @@ $widthB: $width + 15px;
     text-align: center;
     padding: 10px;
     background-color: $textBackground;
-    border-block: solid 10px;
+    border-block: solid 2px;
     border-color: $arg2;
     width: $width;
     margin-left: auto;
@@ -132,9 +132,9 @@ $widthB: $width + 15px;
 @mixin set-div-small{
     text-align: center;
     border-radius: $radius;
-    border: solid 3px; 
-    border-top: solid 20px;
-    border-bottom: solid 20px;
+    border: solid 5px; 
+    // border-top: solid 20px;
+    // border-bottom: solid 20px;
     background-color: $textBackground;
     padding: 10px;
     width: $small-width;
@@ -143,11 +143,12 @@ $widthB: $width + 15px;
     transition: .2s ease;
     z-index: 0;
     opacity: 0.75;
+    display:block; 
     
 }
 //mix in for hover effect 
 @mixin hover-effect{
-    transform: scale(1.1);
+    //transform: scale(1.1);
     z-index: 1;
     opacity: 1;
    
@@ -156,10 +157,10 @@ $widthB: $width + 15px;
      
 }
 
-@mixin unroll{
-    display:block; 
-   transition: 2s ease-out; 
-}
+// @mixin unroll{
+//     display:block; 
+   
+// }
 //css shared between all sized screen.
 //set things like font and color for divs so they match
 body {
@@ -449,14 +450,14 @@ footer a {
         background-size: 100vw 100vh;
     }
  
-    p{
-        display: none; 
-    }
+    // p{
+    //     display: none; 
+    // }
   
     .intro {
        
         display: grid;
-        gap: 100px;
+        gap: 10px;
         justify-items: center;
         height:fit-content;
         padding:10px; 
@@ -496,6 +497,7 @@ footer a {
             @include set-div-small();
             border-radius: $topRight-bottomLeft;
             border-color: $purple;
+           
                      
             &:hover {
                 @include hover-effect();
@@ -503,9 +505,9 @@ footer a {
             }
         
         }
-        .preamble:hover p {
-            @include unroll(); 
-        }
+       // .preamble:hover p {
+           // @include unroll(); 
+       // }
 
     
     h1, h2 {
@@ -514,7 +516,7 @@ footer a {
     #zen-supporting {
 
         display: grid;
-        gap: 100px; 
+        gap: 10px; 
         justify-items: center;
     }
 
@@ -528,9 +530,9 @@ footer a {
             }
         
         }
-        .explanation:hover p {
-            @include unroll(); 
-        }
+       // .explanation:hover p {
+           // @include unroll(); 
+       // }
         .participation {
            
             @include set-div-small();
@@ -542,9 +544,9 @@ footer a {
             }
             
         }
-        .participation:hover p {
-            @include unroll(); 
-        }
+        //.participation:hover p {
+         //   @include unroll(); 
+       // }
          .benefits {
             @include set-div-small();
             border-radius: $topLeft-bottomRight;
@@ -554,9 +556,9 @@ footer a {
             }
            
         }
-        .benefits:hover p {
-            @include unroll(); 
-        }
+        //.benefits:hover p {
+          //  @include unroll(); 
+       // }
         .requirements {
         
             @include set-div-small();
@@ -568,15 +570,16 @@ footer a {
             }
             
         }
-        .requirements:hover p {
-            @include unroll(); 
-        }
+       // .requirements:hover p {
+      //      @include unroll(); 
+       // }
         footer { 
             @include set-div-small(); 
             border-radius: $topLeft-bottomRight;
             border-color: $green;
-            display: none; 
             @include hover-effect();
+            width:100%;
+    
            
             // &:hover {
                 
@@ -593,37 +596,29 @@ footer a {
         border-radius: 0px 0px 0px 0px;
         // background-color: $green;
         width: 100%; 
-        height: 20px; 
+        height: fit-content; 
         overflow: none;
         transition: .2s; 
-        & h3 {
-            display: none;
-        }
+       
 
        
-        &:hover {
-            @include set-div-small(); 
-            @include hover-effect();
+        // &:hover {
+        //     @include set-div-small(); 
+        //     @include hover-effect();
             
-            position:fixed; 
-            top: 10px;
+        //     position:fixed; 
+        //     top: 10px;
            
             
-            width: 90%; 
-            height: auto; 
-            background-color: $textBackground;
-            & ul{
-                @include unroll(); 
-            }
-            & h3 {
-                @include unroll(); 
-            }
-            
-        }
+        //     width: 90%; 
+        //     height: auto; 
+        //     background-color: $textBackground;
+          
+        // }
        
     ul {
         @include listin();
-        display: none; 
+     
       
     }
     
