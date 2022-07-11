@@ -147,14 +147,18 @@ $widthB: $width + 15px;
     
 }
 //mix in for hover effect 
-@mixin hover-effect{
-    transform: scale(1.01);
+@mixin hover-effect($arg){
     z-index: 1;
     opacity: 1;
-   
- 
-    
-     
+   @if($arg == "large") {
+       transform: scale(1.05);
+   }
+   @if($arg == "medium") {
+       transform: scale(1.02);
+   }
+   @if($arg == "small") {
+       transform: scale(1.01);
+   } 
 }
 
 // @mixin unroll{
@@ -226,14 +230,14 @@ footer a {
             @include set-div2("middleA", $pink);
            
             &:hover {
-                @include hover-effect();
+                @include hover-effect(large);
             }
         }
         & .preamble {
             @include set-div2("middleB", $purple);
             
             &:hover {
-                @include hover-effect();
+                @include hover-effect(large);
             }
         }
     }
@@ -257,28 +261,28 @@ footer a {
             @include set-div2("middleA", $orange);
            
             &:hover {
-                @include hover-effect();
+                @include hover-effect(large);
             }
         }
         & .participation {
             @include set-div2("middleB", $yellow);
            
             &:hover {
-                @include hover-effect();
+                @include hover-effect(large);
             }
         }
         & .benefits {
             @include set-div2("middleA", $purple);
            
             &:hover {
-                @include hover-effect();
+                @include hover-effect(large);
             }
         }
         & .requirements {
             @include set-div2("middleB", $pink); 
           
             &:hover {
-                @include hover-effect();
+                @include hover-effect(large);
             }
         }
         & footer {
@@ -348,14 +352,14 @@ footer a {
                 @include set-div2("middleA", $purple);
                
                 &:hover {
-                    @include hover-effect();
+                    @include hover-effect(medium);
                 }
             }
             & .preamble {
                 @include set-div2("middleB", $orange);
                 
                 &:hover {
-                    @include hover-effect();
+                    @include hover-effect(medium);
                 }
             }
         }
@@ -377,28 +381,28 @@ footer a {
                 @include set-div2("middleA", $green);
                
                 &:hover {
-                    @include hover-effect();
+                    @include hover-effect(medium);
                 }
             }
             & .participation {
                 @include set-div2("middleB", $yellow);
                
                 &:hover {
-                    @include hover-effect();
+                    @include hover-effect(medium);
                 }
             }
             & .benefits {
                 @include set-div2("middleA", $purple);
                
                 &:hover {
-                    @include hover-effect();
+                    @include hover-effect(medium);
                 }
             }
             & .requirements {
                 @include set-div2("middleB", $pink); 
               
                 &:hover {
-                    @include hover-effect();
+                    @include hover-effect(medium);
                 }
             }
             & footer {
@@ -491,7 +495,7 @@ footer a {
             border-radius: $topLeft-bottomRight;
             border-color: $pink;
             &:hover {
-                @include hover-effect(); 
+                @include hover-effect(small); 
                
             }
           
@@ -506,7 +510,7 @@ footer a {
            
                      
             &:hover {
-                @include hover-effect();
+                @include hover-effect(small);
                
             }
         
@@ -532,7 +536,7 @@ footer a {
             border-color: $orange;
            
             &:hover {
-                @include hover-effect();
+                @include hover-effect(small);
             }
         
         }
@@ -546,7 +550,7 @@ footer a {
             border-color: $yellow;
            
             &:hover {
-                @include hover-effect();
+                @include hover-effect(small);
             }
             
         }
@@ -558,7 +562,7 @@ footer a {
             border-radius: $topLeft-bottomRight;
             border-color: $purple;
             &:hover {
-                @include hover-effect();
+                @include hover-effect(small);
             }
            
         }
@@ -572,7 +576,7 @@ footer a {
             border-color: $pink;
         
             &:hover {
-                @include hover-effect();
+                @include hover-effect(small);
             }
             
         }
@@ -583,7 +587,7 @@ footer a {
             @include set-div-small(); 
             border-radius: $topLeft-bottomRight;
             border-color: $green;
-            @include hover-effect();
+            @include hover-effect(small);
             
     
            
