@@ -120,6 +120,8 @@ footer a:hover {
     border-radius: 10px 10px 10px 10px;
   }
   .intro .summary:hover {
+    -webkit-transform: scale(1.01);
+            transform: scale(1.01);
     z-index: 1;
     opacity: 1;
   }
@@ -138,6 +140,8 @@ footer a:hover {
     border-radius: 10px 10px 10px 10px;
   }
   .intro .preamble:hover {
+    -webkit-transform: scale(1.01);
+            transform: scale(1.01);
     z-index: 1;
     opacity: 1;
   }
@@ -175,6 +179,8 @@ footer a:hover {
     border-radius: 10px 10px 10px 10px;
   }
   #zen-supporting .explanation:hover {
+    -webkit-transform: scale(1.01);
+            transform: scale(1.01);
     z-index: 1;
     opacity: 1;
   }
@@ -193,6 +199,8 @@ footer a:hover {
     border-radius: 10px 10px 10px 10px;
   }
   #zen-supporting .participation:hover {
+    -webkit-transform: scale(1.01);
+            transform: scale(1.01);
     z-index: 1;
     opacity: 1;
   }
@@ -211,6 +219,8 @@ footer a:hover {
     border-radius: 10px 10px 10px 10px;
   }
   #zen-supporting .benefits:hover {
+    -webkit-transform: scale(1.01);
+            transform: scale(1.01);
     z-index: 1;
     opacity: 1;
   }
@@ -229,6 +239,8 @@ footer a:hover {
     border-radius: 10px 10px 10px 10px;
   }
   #zen-supporting .requirements:hover {
+    -webkit-transform: scale(1.01);
+            transform: scale(1.01);
     z-index: 1;
     opacity: 1;
   }
@@ -341,6 +353,8 @@ footer a:hover {
     border-radius: 10px 10px 10px 10px;
   }
   .intro .summary:hover {
+    -webkit-transform: scale(1.01);
+            transform: scale(1.01);
     z-index: 1;
     opacity: 1;
   }
@@ -359,6 +373,8 @@ footer a:hover {
     border-radius: 10px 10px 10px 10px;
   }
   .intro .preamble:hover {
+    -webkit-transform: scale(1.01);
+            transform: scale(1.01);
     z-index: 1;
     opacity: 1;
   }
@@ -391,6 +407,8 @@ footer a:hover {
     border-radius: 10px 10px 10px 10px;
   }
   #zen-supporting .explanation:hover {
+    -webkit-transform: scale(1.01);
+            transform: scale(1.01);
     z-index: 1;
     opacity: 1;
   }
@@ -409,6 +427,8 @@ footer a:hover {
     border-radius: 10px 10px 10px 10px;
   }
   #zen-supporting .participation:hover {
+    -webkit-transform: scale(1.01);
+            transform: scale(1.01);
     z-index: 1;
     opacity: 1;
   }
@@ -427,6 +447,8 @@ footer a:hover {
     border-radius: 10px 10px 10px 10px;
   }
   #zen-supporting .benefits:hover {
+    -webkit-transform: scale(1.01);
+            transform: scale(1.01);
     z-index: 1;
     opacity: 1;
   }
@@ -445,6 +467,8 @@ footer a:hover {
     border-radius: 10px 10px 10px 10px;
   }
   #zen-supporting .requirements:hover {
+    -webkit-transform: scale(1.01);
+            transform: scale(1.01);
     z-index: 1;
     opacity: 1;
   }
@@ -538,7 +562,7 @@ footer a:hover {
     -webkit-transition: .2s ease;
     transition: .2s ease;
     z-index: 0;
-    opacity: 0.75;
+    opacity: 0.65;
     display: block;
     margin: 0;
     padding: 0;
@@ -561,12 +585,14 @@ footer a:hover {
     -webkit-transition: .2s ease;
     transition: .2s ease;
     z-index: 0;
-    opacity: 0.75;
+    opacity: 0.65;
     display: block;
     border-radius: 10px 10px 10px 10px;
     border-color: #fd70df;
   }
   .summary:hover {
+    -webkit-transform: scale(1.01);
+            transform: scale(1.01);
     z-index: 1;
     opacity: 1;
   }
@@ -585,12 +611,14 @@ footer a:hover {
     -webkit-transition: .2s ease;
     transition: .2s ease;
     z-index: 0;
-    opacity: 0.75;
+    opacity: 0.65;
     display: block;
     border-radius: 10px 10px 10px 10px;
     border-color: #9064ff;
   }
   .preamble:hover {
+    -webkit-transform: scale(1.01);
+            transform: scale(1.01);
     z-index: 1;
     opacity: 1;
   }
@@ -615,12 +643,14 @@ footer a:hover {
     -webkit-transition: .2s ease;
     transition: .2s ease;
     z-index: 0;
-    opacity: 0.75;
+    opacity: 0.65;
     display: block;
     border-radius: 10px 10px 10px 10px;
     border-color: #ff7b64;
   }
   .explanation:hover {
+    -webkit-transform: scale(1.01);
+            transform: scale(1.01);
     z-index: 1;
     opacity: 1;
   }
@@ -636,12 +666,14 @@ footer a:hover {
     -webkit-transition: .2s ease;
     transition: .2s ease;
     z-index: 0;
-    opacity: 0.75;
+    opacity: 0.65;
     display: block;
     border-radius: 10px 10px 10px 10px;
     border-color: #ffc964;
   }
   .participation:hover {
+    -webkit-transform: scale(1.01);
+            transform: scale(1.01);
     z-index: 1;
     opacity: 1;
   }
@@ -657,12 +689,14 @@ footer a:hover {
     -webkit-transition: .2s ease;
     transition: .2s ease;
     z-index: 0;
-    opacity: 0.75;
+    opacity: 0.65;
     display: block;
     border-radius: 10px 10px 10px 10px;
     border-color: #9064ff;
   }
   .benefits:hover {
+    -webkit-transform: scale(1.01);
+            transform: scale(1.01);
     z-index: 1;
     opacity: 1;
   }
@@ -678,12 +712,14 @@ footer a:hover {
     -webkit-transition: .2s ease;
     transition: .2s ease;
     z-index: 0;
-    opacity: 0.75;
+    opacity: 0.65;
     display: block;
     border-radius: 10px 10px 10px 10px;
     border-color: #fd70df;
   }
   .requirements:hover {
+    -webkit-transform: scale(1.01);
+            transform: scale(1.01);
     z-index: 1;
     opacity: 1;
   }
@@ -699,13 +735,14 @@ footer a:hover {
     -webkit-transition: .2s ease;
     transition: .2s ease;
     z-index: 0;
-    opacity: 0.75;
+    opacity: 0.65;
     display: block;
     border-radius: 10px 10px 10px 10px;
     border-color: #64ffbc;
+    -webkit-transform: scale(1.01);
+            transform: scale(1.01);
     z-index: 1;
     opacity: 1;
-    width: 100%;
   }
   .sidebar {
     text-align: center;
@@ -719,11 +756,10 @@ footer a:hover {
     -webkit-transition: .2s ease;
     transition: .2s ease;
     z-index: 0;
-    opacity: 0.75;
+    opacity: 0.65;
     display: block;
     border-color: #64ffbc;
     border-radius: 0px 0px 0px 0px;
-    width: 100%;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;

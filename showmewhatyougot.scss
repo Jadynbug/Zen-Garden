@@ -142,13 +142,13 @@ $widthB: $width + 15px;
     margin-right: auto;
     transition: .2s ease;
     z-index: 0;
-    opacity: 0.75;
+    opacity: 0.65;
     display:block; 
     
 }
 //mix in for hover effect 
 @mixin hover-effect{
-    //transform: scale(1.1);
+    transform: scale(1.01);
     z-index: 1;
     opacity: 1;
    
@@ -584,7 +584,7 @@ footer a {
             border-radius: $topLeft-bottomRight;
             border-color: $green;
             @include hover-effect();
-            width:100%;
+            
     
            
             // &:hover {
@@ -601,7 +601,6 @@ footer a {
         border-color: $green;
         border-radius: 0px 0px 0px 0px;
         // background-color: $green;
-        width: 100%; 
         height: fit-content; 
         overflow: none;
         transition: .2s; 
