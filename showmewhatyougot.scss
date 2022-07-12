@@ -313,7 +313,7 @@ footer a {
 
 }
 //for medium screens
-@media only screen and (max-width: 1399px) and (min-width: 901px) {
+@media only screen and (max-width: 1099px) and (min-width: 901px) {
 
         body {
             background-image: url('./ZenGardenMaybes/pexels-benjamin-suter-3617500.jpg');
@@ -321,6 +321,8 @@ footer a {
             background-attachment: fixed;
             background-position: center;
             background-size: 100vw 100vh;
+            margin: 5px;
+
         }
         .page-wrapper {
            display: grid;
@@ -328,8 +330,10 @@ footer a {
            grid-template-rows: auto auto;
         //    grid-template-rows: repeat(auto-fill, minmax(100px, 680px));
            justify-items: center;
-           grid-column-gap: 15px;
-           width: 97.7vw;       
+           width: 97.7vw;  
+           margin-right: auto;
+            margin-left: auto;  
+            margin: 0;   
         }
         .intro {
             overflow-x: none;

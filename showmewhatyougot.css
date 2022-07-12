@@ -264,13 +264,14 @@ footer a:hover {
     font-size: 23px;
   }
 }
-@media only screen and (max-width: 1399px) and (min-width: 901px) {
+@media only screen and (max-width: 1099px) and (min-width: 901px) {
   body {
     background-image: url("./ZenGardenMaybes/pexels-benjamin-suter-3617500.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: 100vw 100vh;
+    margin: 5px;
   }
 
   .page-wrapper {
@@ -278,8 +279,10 @@ footer a:hover {
     grid-template-columns: 1fr 200px;
     grid-template-rows: auto auto;
     justify-items: center;
-    grid-column-gap: 15px;
     width: 97.7vw;
+    margin-right: auto;
+    margin-left: auto;
+    margin: 0;
   }
 
   .intro {
