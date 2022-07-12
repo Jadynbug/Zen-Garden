@@ -89,15 +89,6 @@ $widthB: $width + 15px;
 @mixin listin {
     list-style: none;
 }
-//to easily set a div, p, of section to a color with white lettering
-@mixin color-p ($arg) {
-    background-color: $arg;
-}
-//set base for large screen div
-@mixin set-div {
-    text-align: center;
-    padding: 10px;
-}
 //set up divs with background, border, radius, etc
 @mixin set-div2 ($arg, $arg2) {
     text-align: center;
