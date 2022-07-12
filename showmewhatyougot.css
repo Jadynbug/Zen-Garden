@@ -47,7 +47,7 @@ footer a:hover {
   color: white;
 }
 
-@media only screen and (min-width: 1100px) {
+@media only screen and (min-width: 1201px) {
   body {
     background-image: url("./ZenGardenMaybes/pexels-fox-212324.jpg");
     background-repeat: no-repeat;
@@ -71,6 +71,7 @@ footer a:hover {
     display: grid;
     height: fit-content;
     overflow-x: none;
+    width: 100%;
   }
   .intro > * {
     padding: 10px;
@@ -86,13 +87,9 @@ footer a:hover {
     background-color: aliceblue;
     border-block: solid 20px;
     border-color: #64ffbc;
-    width: 600px;
-    margin-left: auto;
-    margin-right: auto;
     transition: all 1s;
     z-index: 0;
     border-radius: 0 0 90px 90px;
-    width: 80vw;
     z-index: 3;
   }
   .intro .summary {
@@ -101,11 +98,11 @@ footer a:hover {
     background-color: aliceblue;
     border-block: solid 20px;
     border-color: #fd70df;
+    transition: all 1s;
+    z-index: 0;
     width: 600px;
     margin-left: auto;
     margin-right: auto;
-    transition: all 1s;
-    z-index: 0;
     border-radius: 10px 10px 10px 10px;
   }
   .intro .summary:hover {
@@ -119,11 +116,11 @@ footer a:hover {
     background-color: aliceblue;
     border-block: solid 20px;
     border-color: #9064ff;
+    transition: all 1s;
+    z-index: 0;
     width: 600px;
     margin-left: auto;
     margin-right: auto;
-    transition: all 1s;
-    z-index: 0;
     border-radius: 10px 10px 10px 10px;
   }
   .intro .preamble:hover {
@@ -155,11 +152,11 @@ footer a:hover {
     background-color: aliceblue;
     border-block: solid 20px;
     border-color: #ff7b64;
+    transition: all 1s;
+    z-index: 0;
     width: 600px;
     margin-left: auto;
     margin-right: auto;
-    transition: all 1s;
-    z-index: 0;
     border-radius: 10px 10px 10px 10px;
   }
   #zen-supporting .explanation:hover {
@@ -173,11 +170,11 @@ footer a:hover {
     background-color: aliceblue;
     border-block: solid 20px;
     border-color: #ffc964;
+    transition: all 1s;
+    z-index: 0;
     width: 600px;
     margin-left: auto;
     margin-right: auto;
-    transition: all 1s;
-    z-index: 0;
     border-radius: 10px 10px 10px 10px;
   }
   #zen-supporting .participation:hover {
@@ -191,11 +188,11 @@ footer a:hover {
     background-color: aliceblue;
     border-block: solid 20px;
     border-color: #9064ff;
+    transition: all 1s;
+    z-index: 0;
     width: 600px;
     margin-left: auto;
     margin-right: auto;
-    transition: all 1s;
-    z-index: 0;
     border-radius: 10px 10px 10px 10px;
   }
   #zen-supporting .benefits:hover {
@@ -209,11 +206,11 @@ footer a:hover {
     background-color: aliceblue;
     border-block: solid 20px;
     border-color: #fd70df;
+    transition: all 1s;
+    z-index: 0;
     width: 600px;
     margin-left: auto;
     margin-right: auto;
-    transition: all 1s;
-    z-index: 0;
     border-radius: 10px 10px 10px 10px;
   }
   #zen-supporting .requirements:hover {
@@ -227,11 +224,11 @@ footer a:hover {
     background-color: aliceblue;
     border-block: solid 20px;
     border-color: #64ffbc;
+    transition: all 1s;
+    z-index: 0;
     width: 600px;
     margin-left: auto;
     margin-right: auto;
-    transition: all 1s;
-    z-index: 0;
     border-radius: 90px 90px 0 0;
     padding: 15px;
     z-index: 0;
@@ -243,11 +240,11 @@ footer a:hover {
     background-color: aliceblue;
     border-block: solid 20px;
     border-color: #64ffbc;
+    transition: all 1s;
+    z-index: 0;
     width: 600px;
     margin-left: auto;
     margin-right: auto;
-    transition: all 1s;
-    z-index: 0;
     border-radius: 90px 0 0 90px;
     width: 200px;
     padding: 5px;
@@ -264,7 +261,7 @@ footer a:hover {
     font-size: 23px;
   }
 }
-@media only screen and (max-width: 1099px) and (min-width: 901px) {
+@media only screen and (max-width: 1200px) and (min-width: 901px) {
   body {
     background-image: url("./ZenGardenMaybes/pexels-benjamin-suter-3617500.jpg");
     background-repeat: no-repeat;
@@ -280,9 +277,6 @@ footer a:hover {
     grid-template-rows: auto auto;
     justify-items: center;
     width: 97.7vw;
-    margin-right: auto;
-    margin-left: auto;
-    margin: 0;
   }
 
   .intro {
@@ -302,9 +296,6 @@ footer a:hover {
     background-color: aliceblue;
     border-block: solid 20px;
     border-color: #fd70df;
-    width: 600px;
-    margin-left: auto;
-    margin-right: auto;
     transition: all 1s;
     z-index: 0;
     border-radius: 0 0 90px 90px;
@@ -317,11 +308,11 @@ footer a:hover {
     background-color: aliceblue;
     border-block: solid 20px;
     border-color: #9064ff;
+    transition: all 1s;
+    z-index: 0;
     width: 600px;
     margin-left: auto;
     margin-right: auto;
-    transition: all 1s;
-    z-index: 0;
     border-radius: 10px 10px 10px 10px;
   }
   .intro .summary:hover {
@@ -335,11 +326,11 @@ footer a:hover {
     background-color: aliceblue;
     border-block: solid 20px;
     border-color: #ff7b64;
+    transition: all 1s;
+    z-index: 0;
     width: 600px;
     margin-left: auto;
     margin-right: auto;
-    transition: all 1s;
-    z-index: 0;
     border-radius: 10px 10px 10px 10px;
   }
   .intro .preamble:hover {
@@ -369,11 +360,11 @@ footer a:hover {
     background-color: aliceblue;
     border-block: solid 20px;
     border-color: #64ffbc;
+    transition: all 1s;
+    z-index: 0;
     width: 600px;
     margin-left: auto;
     margin-right: auto;
-    transition: all 1s;
-    z-index: 0;
     border-radius: 10px 10px 10px 10px;
   }
   #zen-supporting .explanation:hover {
@@ -387,11 +378,11 @@ footer a:hover {
     background-color: aliceblue;
     border-block: solid 20px;
     border-color: #ffc964;
+    transition: all 1s;
+    z-index: 0;
     width: 600px;
     margin-left: auto;
     margin-right: auto;
-    transition: all 1s;
-    z-index: 0;
     border-radius: 10px 10px 10px 10px;
   }
   #zen-supporting .participation:hover {
@@ -405,11 +396,11 @@ footer a:hover {
     background-color: aliceblue;
     border-block: solid 20px;
     border-color: #9064ff;
+    transition: all 1s;
+    z-index: 0;
     width: 600px;
     margin-left: auto;
     margin-right: auto;
-    transition: all 1s;
-    z-index: 0;
     border-radius: 10px 10px 10px 10px;
   }
   #zen-supporting .benefits:hover {
@@ -423,11 +414,11 @@ footer a:hover {
     background-color: aliceblue;
     border-block: solid 20px;
     border-color: #fd70df;
+    transition: all 1s;
+    z-index: 0;
     width: 600px;
     margin-left: auto;
     margin-right: auto;
-    transition: all 1s;
-    z-index: 0;
     border-radius: 10px 10px 10px 10px;
   }
   #zen-supporting .requirements:hover {
@@ -441,11 +432,11 @@ footer a:hover {
     background-color: aliceblue;
     border-block: solid 20px;
     border-color: #ffc964;
+    transition: all 1s;
+    z-index: 0;
     width: 600px;
     margin-left: auto;
     margin-right: auto;
-    transition: all 1s;
-    z-index: 0;
     border-radius: 90px 90px 0 0;
     padding: 15px;
     z-index: 0;
@@ -457,11 +448,11 @@ footer a:hover {
     background-color: aliceblue;
     border-block: solid 20px;
     border-color: #fd70df;
+    transition: all 1s;
+    z-index: 0;
     width: 600px;
     margin-left: auto;
     margin-right: auto;
-    transition: all 1s;
-    z-index: 0;
     border-radius: 90px 0 0 90px;
     width: 200px;
     padding: 5px;
