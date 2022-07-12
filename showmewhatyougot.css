@@ -47,6 +47,123 @@ footer a:hover {
   color: white;
 }
 
+.intro header {
+  text-align: center;
+  padding: 10px;
+  background-color: aliceblue;
+  border-block: solid 20px;
+  border-color: #64ffbc;
+  transition: all 1s;
+  z-index: 0;
+  border-radius: 0 0 90px 90px;
+}
+.intro .summary {
+  text-align: center;
+  padding: 10px;
+  background-color: aliceblue;
+  border-block: solid 20px;
+  border-color: #fd70df;
+  transition: all 1s;
+  z-index: 0;
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px 10px 10px 10px;
+}
+.intro .preamble {
+  text-align: center;
+  padding: 10px;
+  background-color: aliceblue;
+  border-block: solid 20px;
+  border-color: #9064ff;
+  transition: all 1s;
+  z-index: 0;
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px 10px 10px 10px;
+}
+
+#zen-supporting .explanation {
+  text-align: center;
+  padding: 10px;
+  background-color: aliceblue;
+  border-block: solid 20px;
+  border-color: #ff7b64;
+  transition: all 1s;
+  z-index: 0;
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px 10px 10px 10px;
+}
+#zen-supporting .participation {
+  text-align: center;
+  padding: 10px;
+  background-color: aliceblue;
+  border-block: solid 20px;
+  border-color: #ffc964;
+  transition: all 1s;
+  z-index: 0;
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px 10px 10px 10px;
+}
+#zen-supporting .benefits {
+  text-align: center;
+  padding: 10px;
+  background-color: aliceblue;
+  border-block: solid 20px;
+  border-color: #9064ff;
+  transition: all 1s;
+  z-index: 0;
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px 10px 10px 10px;
+}
+#zen-supporting .requirements {
+  text-align: center;
+  padding: 10px;
+  background-color: aliceblue;
+  border-block: solid 20px;
+  border-color: #fd70df;
+  transition: all 1s;
+  z-index: 0;
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px 10px 10px 10px;
+}
+#zen-supporting footer {
+  text-align: center;
+  padding: 10px;
+  background-color: aliceblue;
+  border-block: solid 20px;
+  border-color: #64ffbc;
+  transition: all 1s;
+  z-index: 0;
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 90px 90px 0 0;
+}
+
+.sidebar {
+  text-align: center;
+  padding: 10px;
+  background-color: aliceblue;
+  border-block: solid 20px;
+  border-color: #64ffbc;
+  transition: all 1s;
+  z-index: 0;
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 90px 0 0 90px;
+}
+
 @media only screen and (min-width: 1201px) {
   body {
     background-image: url("./ZenGardenMaybes/pexels-fox-212324.jpg");
@@ -82,46 +199,12 @@ footer a:hover {
     opacity: 1;
   }
   .intro header {
-    text-align: center;
-    padding: 10px;
-    background-color: aliceblue;
-    border-block: solid 20px;
-    border-color: #64ffbc;
-    transition: all 1s;
-    z-index: 0;
-    border-radius: 0 0 90px 90px;
     z-index: 3;
-  }
-  .intro .summary {
-    text-align: center;
-    padding: 10px;
-    background-color: aliceblue;
-    border-block: solid 20px;
-    border-color: #fd70df;
-    transition: all 1s;
-    z-index: 0;
-    width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 10px 10px 10px 10px;
   }
   .intro .summary:hover {
     z-index: 1;
     opacity: 1;
     transform: scale(1.05);
-  }
-  .intro .preamble {
-    text-align: center;
-    padding: 10px;
-    background-color: aliceblue;
-    border-block: solid 20px;
-    border-color: #9064ff;
-    transition: all 1s;
-    z-index: 0;
-    width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 10px 10px 10px 10px;
   }
   .intro .preamble:hover {
     z-index: 1;
@@ -146,72 +229,20 @@ footer a:hover {
   #zen-supporting > *:hover {
     opacity: 1;
   }
-  #zen-supporting .explanation {
-    text-align: center;
-    padding: 10px;
-    background-color: aliceblue;
-    border-block: solid 20px;
-    border-color: #ff7b64;
-    transition: all 1s;
-    z-index: 0;
-    width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 10px 10px 10px 10px;
-  }
   #zen-supporting .explanation:hover {
     z-index: 1;
     opacity: 1;
     transform: scale(1.05);
-  }
-  #zen-supporting .participation {
-    text-align: center;
-    padding: 10px;
-    background-color: aliceblue;
-    border-block: solid 20px;
-    border-color: #ffc964;
-    transition: all 1s;
-    z-index: 0;
-    width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 10px 10px 10px 10px;
   }
   #zen-supporting .participation:hover {
     z-index: 1;
     opacity: 1;
     transform: scale(1.05);
   }
-  #zen-supporting .benefits {
-    text-align: center;
-    padding: 10px;
-    background-color: aliceblue;
-    border-block: solid 20px;
-    border-color: #9064ff;
-    transition: all 1s;
-    z-index: 0;
-    width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 10px 10px 10px 10px;
-  }
   #zen-supporting .benefits:hover {
     z-index: 1;
     opacity: 1;
     transform: scale(1.05);
-  }
-  #zen-supporting .requirements {
-    text-align: center;
-    padding: 10px;
-    background-color: aliceblue;
-    border-block: solid 20px;
-    border-color: #fd70df;
-    transition: all 1s;
-    z-index: 0;
-    width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 10px 10px 10px 10px;
   }
   #zen-supporting .requirements:hover {
     z-index: 1;
@@ -219,33 +250,11 @@ footer a:hover {
     transform: scale(1.05);
   }
   #zen-supporting footer {
-    text-align: center;
-    padding: 10px;
-    background-color: aliceblue;
-    border-block: solid 20px;
-    border-color: #64ffbc;
-    transition: all 1s;
-    z-index: 0;
-    width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 90px 90px 0 0;
     padding: 15px;
     z-index: 0;
   }
 
   .sidebar {
-    text-align: center;
-    padding: 10px;
-    background-color: aliceblue;
-    border-block: solid 20px;
-    border-color: #64ffbc;
-    transition: all 1s;
-    z-index: 0;
-    width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 90px 0 0 90px;
     width: 200px;
     padding: 5px;
     grid-column: 2;
@@ -261,7 +270,7 @@ footer a:hover {
     font-size: 23px;
   }
 }
-@media only screen and (max-width: 1200px) and (min-width: 901px) {
+@media only screen and (max-width: 1px) and (min-width: 901px) {
   body {
     background-image: url("./ZenGardenMaybes/pexels-benjamin-suter-3617500.jpg");
     background-repeat: no-repeat;

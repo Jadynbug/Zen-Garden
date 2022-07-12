@@ -187,6 +187,37 @@ a {
 footer a {
     @include linkStyle();
 }
+.intro {
+    & header {
+        @include set-div2("top", $green);
+    }
+    & .summary {
+        @include set-div2("middleA", $pink);
+    }
+    & .preamble {
+        @include set-div2("middleB", $purple);
+    }
+}
+#zen-supporting {
+    & .explanation {
+        @include set-div2("middleA", $orange);
+    }
+    & .participation {
+        @include set-div2("middleB", $yellow);
+    }
+    & .benefits {
+        @include set-div2("middleA", $purple);
+    }
+    & .requirements {
+        @include set-div2("middleB", $pink); 
+    }
+    & footer {
+        @include set-div2("bottom", $green);
+    }
+}
+.sidebar {
+    @include set-div2("side", $green);
+}
 
 //for big screens
 @media only screen and (min-width: 1201px) {
@@ -201,7 +232,6 @@ footer a {
     .page-wrapper {
        display: grid;
        grid-template-columns: 1fr 210px;
-    //    grid-template-rows: repeat(auto-fill, minmax(100px, 680px));
        grid-template-rows: auto auto;
        justify-items: center;
        width: 97.7vw; 
@@ -224,19 +254,16 @@ footer a {
         }
 
         & header {
-           @include set-div2("top", $green);
            z-index: 3;
 
         }
         & .summary {
-            @include set-div2("middleA", $pink);
            
             &:hover {
                 @include hover-effect(large);
             }
         }
         & .preamble {
-            @include set-div2("middleB", $purple);
             
             &:hover {
                 @include hover-effect(large);
@@ -260,35 +287,30 @@ footer a {
         }
        
         & .explanation {
-            @include set-div2("middleA", $orange);
            
             &:hover {
                 @include hover-effect(large);
             }
         }
         & .participation {
-            @include set-div2("middleB", $yellow);
            
             &:hover {
                 @include hover-effect(large);
             }
         }
         & .benefits {
-            @include set-div2("middleA", $purple);
            
             &:hover {
                 @include hover-effect(large);
             }
         }
         & .requirements {
-            @include set-div2("middleB", $pink); 
           
             &:hover {
                 @include hover-effect(large);
             }
         }
         & footer {
-            @include set-div2("bottom", $green);
             padding: 15px;
             z-index: 0;
             
@@ -296,7 +318,6 @@ footer a {
     }
 
     .sidebar {
-        @include set-div2("side", $green);
         width: 200px;
         padding: 5px; 
         grid-column: 2;
@@ -315,7 +336,7 @@ footer a {
 
 }
 //for medium screens
-@media only screen and (max-width: 1200px) and (min-width: 901px) {
+@media only screen and (max-width: 1px) and (min-width: 901px) {
 
         body {
             background-image: url('./ZenGardenMaybes/pexels-benjamin-suter-3617500.jpg');
