@@ -550,12 +550,10 @@ footer a:hover {
   .intro {
     display: -ms-grid;
     display: grid;
-    gap: 10px;
     justify-items: center;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
-    padding: 10px;
   }
   .intro header {
     text-align: center;
@@ -607,12 +605,10 @@ footer a:hover {
     margin: 5px;
   }
   #zen-supporting {
-    gap: 10px;
     justify-items: center;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
-    padding: 10px;
   }
   #zen-supporting .explanation {
     text-align: center;
