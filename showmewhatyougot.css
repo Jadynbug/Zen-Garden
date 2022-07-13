@@ -16,15 +16,18 @@ h2 {
 }
 
 a {
-  text-decoration: wavy;
+  -webkit-text-decoration: wavy;
+          text-decoration: wavy;
   font-family: "Zen Loop", sans-serif;
   font-weight: 700;
   font-size: x-large;
   color: #9064ff;
 }
+
 a:visited {
   color: #fd70df;
 }
+
 a:hover {
   color: #ff7b64;
 }
@@ -38,10 +41,12 @@ footer a {
   padding: 15px;
   border-radius: 90px 0 90px 0;
 }
+
 footer a:visited {
   background-color: #fd70df;
   color: white;
 }
+
 footer a:hover {
   background-color: #ff7b64;
   color: white;
@@ -53,16 +58,19 @@ footer a:hover {
   background-color: aliceblue;
   border-block: solid 20px;
   border-color: #64ffbc;
+  -webkit-transition: all 1s;
   transition: all 1s;
   z-index: 0;
   border-radius: 0 0 90px 90px;
 }
+
 .intro .summary {
   text-align: center;
   padding: 10px;
   background-color: aliceblue;
   border-block: solid 20px;
   border-color: #fd70df;
+  -webkit-transition: all 1s;
   transition: all 1s;
   z-index: 0;
   width: 600px;
@@ -70,12 +78,14 @@ footer a:hover {
   margin-right: auto;
   border-radius: 10px 10px 10px 10px;
 }
+
 .intro .preamble {
   text-align: center;
   padding: 10px;
   background-color: aliceblue;
   border-block: solid 20px;
   border-color: #9064ff;
+  -webkit-transition: all 1s;
   transition: all 1s;
   z-index: 0;
   width: 600px;
@@ -90,6 +100,7 @@ footer a:hover {
   background-color: aliceblue;
   border-block: solid 20px;
   border-color: #ff7b64;
+  -webkit-transition: all 1s;
   transition: all 1s;
   z-index: 0;
   width: 600px;
@@ -97,12 +108,14 @@ footer a:hover {
   margin-right: auto;
   border-radius: 10px 10px 10px 10px;
 }
+
 #zen-supporting .participation {
   text-align: center;
   padding: 10px;
   background-color: aliceblue;
   border-block: solid 20px;
   border-color: #ffc964;
+  -webkit-transition: all 1s;
   transition: all 1s;
   z-index: 0;
   width: 600px;
@@ -110,12 +123,14 @@ footer a:hover {
   margin-right: auto;
   border-radius: 10px 10px 10px 10px;
 }
+
 #zen-supporting .benefits {
   text-align: center;
   padding: 10px;
   background-color: aliceblue;
   border-block: solid 20px;
   border-color: #9064ff;
+  -webkit-transition: all 1s;
   transition: all 1s;
   z-index: 0;
   width: 600px;
@@ -123,12 +138,14 @@ footer a:hover {
   margin-right: auto;
   border-radius: 10px 10px 10px 10px;
 }
+
 #zen-supporting .requirements {
   text-align: center;
   padding: 10px;
   background-color: aliceblue;
   border-block: solid 20px;
   border-color: #fd70df;
+  -webkit-transition: all 1s;
   transition: all 1s;
   z-index: 0;
   width: 600px;
@@ -136,12 +153,14 @@ footer a:hover {
   margin-right: auto;
   border-radius: 10px 10px 10px 10px;
 }
+
 #zen-supporting footer {
   text-align: center;
   padding: 10px;
   background-color: aliceblue;
   border-block: solid 20px;
   border-color: #64ffbc;
+  -webkit-transition: all 1s;
   transition: all 1s;
   z-index: 0;
   width: 600px;
@@ -156,6 +175,7 @@ footer a:hover {
   background-color: aliceblue;
   border-block: solid 20px;
   border-color: #64ffbc;
+  -webkit-transition: all 1s;
   transition: all 1s;
   z-index: 0;
   width: 600px;
@@ -173,19 +193,23 @@ footer a:hover {
     background-size: 100vw 100vh;
     margin: 5px;
   }
-
   .page-wrapper {
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: 1fr 210px;
-    grid-template-rows: auto auto;
+    -ms-grid-columns: 1fr 210px;
+        grid-template-columns: 1fr 210px;
+    -ms-grid-rows: auto auto;
+        grid-template-rows: auto auto;
     justify-items: center;
     width: 97.7vw;
     margin-right: auto;
     margin-left: auto;
   }
-
   .intro {
+    display: -ms-grid;
     display: grid;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
     overflow-x: none;
     width: 100%;
@@ -204,20 +228,23 @@ footer a:hover {
   .intro .summary:hover {
     z-index: 1;
     opacity: 1;
-    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
   }
   .intro .preamble:hover {
     z-index: 1;
     opacity: 1;
-    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
   }
-
   h1, h2 {
     margin: 5px;
   }
-
   #zen-supporting {
+    display: -ms-grid;
     display: grid;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
     width: 100%;
   }
@@ -232,32 +259,38 @@ footer a:hover {
   #zen-supporting .explanation:hover {
     z-index: 1;
     opacity: 1;
-    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
   }
   #zen-supporting .participation:hover {
     z-index: 1;
     opacity: 1;
-    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
   }
   #zen-supporting .benefits:hover {
     z-index: 1;
     opacity: 1;
-    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
   }
   #zen-supporting .requirements:hover {
     z-index: 1;
     opacity: 1;
-    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
   }
   #zen-supporting footer {
     padding: 15px;
     z-index: 0;
   }
-
   .sidebar {
     width: 200px;
     padding: 5px;
+    -ms-grid-column: 2;
     grid-column: 2;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
     grid-row: 1/span 2;
     padding-top: 5px;
     font-size: 10px;
@@ -270,7 +303,8 @@ footer a:hover {
     font-size: 23px;
   }
 }
-@media only screen and (max-width: 1px) and (min-width: 901px) {
+
+@media only screen and (max-width: 1200px) and (min-width: 901px) {
   body {
     background-image: url("./ZenGardenMaybes/pexels-benjamin-suter-3617500.jpg");
     background-repeat: no-repeat;
@@ -279,15 +313,16 @@ footer a:hover {
     background-size: 100vw 100vh;
     margin: 5px;
   }
-
   .page-wrapper {
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: 1fr 200px;
-    grid-template-rows: auto auto;
+    -ms-grid-columns: 1fr 200px;
+        grid-template-columns: 1fr 200px;
+    -ms-grid-rows: auto auto;
+        grid-template-rows: auto auto;
     justify-items: center;
     width: 97.7vw;
   }
-
   .intro {
     overflow-x: none;
   }
@@ -305,6 +340,7 @@ footer a:hover {
     background-color: aliceblue;
     border-block: solid 20px;
     border-color: #fd70df;
+    -webkit-transition: all 1s;
     transition: all 1s;
     z-index: 0;
     border-radius: 0 0 90px 90px;
@@ -317,6 +353,7 @@ footer a:hover {
     background-color: aliceblue;
     border-block: solid 20px;
     border-color: #9064ff;
+    -webkit-transition: all 1s;
     transition: all 1s;
     z-index: 0;
     width: 600px;
@@ -327,7 +364,8 @@ footer a:hover {
   .intro .summary:hover {
     z-index: 1;
     opacity: 1;
-    transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+            transform: scale(1.02);
   }
   .intro .preamble {
     text-align: center;
@@ -335,6 +373,7 @@ footer a:hover {
     background-color: aliceblue;
     border-block: solid 20px;
     border-color: #ff7b64;
+    -webkit-transition: all 1s;
     transition: all 1s;
     z-index: 0;
     width: 600px;
@@ -345,13 +384,12 @@ footer a:hover {
   .intro .preamble:hover {
     z-index: 1;
     opacity: 1;
-    transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+            transform: scale(1.02);
   }
-
   h1, h2 {
     margin: 5px;
   }
-
   #zen-supporting {
     width: 100%;
   }
@@ -369,6 +407,7 @@ footer a:hover {
     background-color: aliceblue;
     border-block: solid 20px;
     border-color: #64ffbc;
+    -webkit-transition: all 1s;
     transition: all 1s;
     z-index: 0;
     width: 600px;
@@ -379,7 +418,8 @@ footer a:hover {
   #zen-supporting .explanation:hover {
     z-index: 1;
     opacity: 1;
-    transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+            transform: scale(1.02);
   }
   #zen-supporting .participation {
     text-align: center;
@@ -387,6 +427,7 @@ footer a:hover {
     background-color: aliceblue;
     border-block: solid 20px;
     border-color: #ffc964;
+    -webkit-transition: all 1s;
     transition: all 1s;
     z-index: 0;
     width: 600px;
@@ -397,7 +438,8 @@ footer a:hover {
   #zen-supporting .participation:hover {
     z-index: 1;
     opacity: 1;
-    transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+            transform: scale(1.02);
   }
   #zen-supporting .benefits {
     text-align: center;
@@ -405,6 +447,7 @@ footer a:hover {
     background-color: aliceblue;
     border-block: solid 20px;
     border-color: #9064ff;
+    -webkit-transition: all 1s;
     transition: all 1s;
     z-index: 0;
     width: 600px;
@@ -415,7 +458,8 @@ footer a:hover {
   #zen-supporting .benefits:hover {
     z-index: 1;
     opacity: 1;
-    transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+            transform: scale(1.02);
   }
   #zen-supporting .requirements {
     text-align: center;
@@ -423,6 +467,7 @@ footer a:hover {
     background-color: aliceblue;
     border-block: solid 20px;
     border-color: #fd70df;
+    -webkit-transition: all 1s;
     transition: all 1s;
     z-index: 0;
     width: 600px;
@@ -433,7 +478,8 @@ footer a:hover {
   #zen-supporting .requirements:hover {
     z-index: 1;
     opacity: 1;
-    transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+            transform: scale(1.02);
   }
   #zen-supporting footer {
     text-align: center;
@@ -441,6 +487,7 @@ footer a:hover {
     background-color: aliceblue;
     border-block: solid 20px;
     border-color: #ffc964;
+    -webkit-transition: all 1s;
     transition: all 1s;
     z-index: 0;
     width: 600px;
@@ -450,13 +497,13 @@ footer a:hover {
     padding: 15px;
     z-index: 0;
   }
-
   .sidebar {
     text-align: center;
     padding: 10px;
     background-color: aliceblue;
     border-block: solid 20px;
     border-color: #fd70df;
+    -webkit-transition: all 1s;
     transition: all 1s;
     z-index: 0;
     width: 600px;
@@ -465,7 +512,10 @@ footer a:hover {
     border-radius: 90px 0 0 90px;
     width: 200px;
     padding: 5px;
+    -ms-grid-column: 2;
     grid-column: 2;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
     grid-row: 1/span 2;
     padding-top: 5px;
     font-size: 10px;
@@ -478,242 +528,220 @@ footer a:hover {
     font-size: 23px;
   }
 }
+
 @media only screen and (max-width: 900px) {
   body {
-    overflow-x: hidden;
+    overflow-x: none;
   }
-
   .page-wrapper {
+    display: -ms-grid;
     display: grid;
-    gap: 100px;
-    overflow-x: hidden;
+    gap: 0px;
+    overflow-x: none;
     background-color: #778899;
     background-image: url("./ZenGardenMaybes/pexels-irina-iriser-1381679.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: 100vw 100vh;
+    -webkit-transition: 0;
+    transition: 0;
   }
-
   .intro {
+    display: -ms-grid;
     display: grid;
     gap: 10px;
     justify-items: center;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
     padding: 10px;
   }
-
-  header {
+  .intro header {
     text-align: center;
     border-radius: 80px;
-    border: solid 5px;
-    background-color: aliceblue;
-    padding: 10px;
+    border-width: 5px;
     width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    transition: 0.2s ease;
-    z-index: 0;
-    opacity: 0.65;
-    display: block;
-    margin: 0;
-    padding: 0;
-    width: 90vw;
-    border-radius: 0 0 90px 90px;
-    border-color: #64ffbc;
-  }
-  header:hover {
-    opacity: 1;
-  }
-
-  .summary {
-    text-align: center;
-    border-radius: 80px;
-    border: solid 5px;
-    background-color: aliceblue;
+    opacity: 0.85;
+    margin-bottom: 5px;
     padding: 10px;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    transition: 0.2s ease;
-    z-index: 0;
-    opacity: 0.65;
-    display: block;
-    border-radius: 10px 10px 10px 10px;
-    border-color: #fd70df;
+    width: 100%;
   }
-  .summary:hover {
+  .intro header:hover {
     z-index: 1;
     opacity: 1;
-    transform: scale(1.01);
+    -webkit-transform: scale(1.01);
+            transform: scale(1.01);
   }
-
-  .summary p {
-    display: block;
-  }
-
-  .preamble {
+  .intro .summary {
     text-align: center;
     border-radius: 80px;
-    border: solid 5px;
-    background-color: aliceblue;
-    padding: 10px;
+    border-width: 5px;
     width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    transition: 0.2s ease;
-    z-index: 0;
-    opacity: 0.65;
-    display: block;
-    border-radius: 10px 10px 10px 10px;
-    border-color: #9064ff;
+    opacity: 0.85;
+    margin-bottom: 5px;
+    padding: 10px;
   }
-  .preamble:hover {
+  .intro .summary:hover {
     z-index: 1;
     opacity: 1;
-    transform: scale(1.01);
+    -webkit-transform: scale(1.01);
+            transform: scale(1.01);
   }
-
+  .intro .preamble {
+    text-align: center;
+    border-radius: 80px;
+    border-width: 5px;
+    width: 90%;
+    opacity: 0.85;
+    margin-bottom: 5px;
+    padding: 10px;
+  }
+  .intro .preamble:hover {
+    z-index: 1;
+    opacity: 1;
+    -webkit-transform: scale(1.01);
+            transform: scale(1.01);
+  }
   h1, h2 {
     margin: 5px;
   }
-
   #zen-supporting {
-    display: grid;
     gap: 10px;
     justify-items: center;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 10px;
   }
-
-  .explanation {
+  #zen-supporting .explanation {
     text-align: center;
     border-radius: 80px;
-    border: solid 5px;
-    background-color: aliceblue;
-    padding: 10px;
+    border-width: 5px;
     width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    transition: 0.2s ease;
-    z-index: 0;
-    opacity: 0.65;
-    display: block;
-    border-radius: 10px 10px 10px 10px;
-    border-color: #ff7b64;
+    opacity: 0.85;
+    margin-bottom: 5px;
+    padding: 10px;
   }
-  .explanation:hover {
+  #zen-supporting .explanation:hover {
     z-index: 1;
     opacity: 1;
-    transform: scale(1.01);
+    -webkit-transform: scale(1.01);
+            transform: scale(1.01);
   }
-
-  .participation {
+  #zen-supporting .participation {
     text-align: center;
     border-radius: 80px;
-    border: solid 5px;
-    background-color: aliceblue;
-    padding: 10px;
+    border-width: 5px;
     width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    transition: 0.2s ease;
-    z-index: 0;
-    opacity: 0.65;
-    display: block;
-    border-radius: 10px 10px 10px 10px;
-    border-color: #ffc964;
+    opacity: 0.85;
+    margin-bottom: 5px;
+    padding: 10px;
   }
-  .participation:hover {
+  #zen-supporting .participation:hover {
     z-index: 1;
     opacity: 1;
-    transform: scale(1.01);
+    -webkit-transform: scale(1.01);
+            transform: scale(1.01);
   }
-
-  .benefits {
+  #zen-supporting .benefits {
     text-align: center;
     border-radius: 80px;
-    border: solid 5px;
-    background-color: aliceblue;
-    padding: 10px;
+    border-width: 5px;
     width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    transition: 0.2s ease;
-    z-index: 0;
-    opacity: 0.65;
-    display: block;
-    border-radius: 10px 10px 10px 10px;
-    border-color: #9064ff;
+    opacity: 0.85;
+    margin-bottom: 5px;
+    padding: 10px;
   }
-  .benefits:hover {
+  #zen-supporting .benefits:hover {
     z-index: 1;
     opacity: 1;
-    transform: scale(1.01);
+    -webkit-transform: scale(1.01);
+            transform: scale(1.01);
   }
-
-  .requirements {
+  #zen-supporting .requirements {
     text-align: center;
     border-radius: 80px;
-    border: solid 5px;
-    background-color: aliceblue;
-    padding: 10px;
+    border-width: 5px;
     width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    transition: 0.2s ease;
-    z-index: 0;
-    opacity: 0.65;
-    display: block;
-    border-radius: 10px 10px 10px 10px;
-    border-color: #fd70df;
+    opacity: 0.85;
+    margin-bottom: 5px;
+    padding: 10px;
   }
-  .requirements:hover {
+  #zen-supporting .requirements:hover {
     z-index: 1;
     opacity: 1;
-    transform: scale(1.01);
+    -webkit-transform: scale(1.01);
+            transform: scale(1.01);
   }
-
-  footer {
+  #zen-supporting footer {
     text-align: center;
     border-radius: 80px;
-    border: solid 5px;
-    background-color: aliceblue;
-    padding: 10px;
+    border-width: 5px;
     width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    transition: 0.2s ease;
-    z-index: 0;
-    opacity: 0.65;
-    display: block;
-    border-radius: 10px 10px 10px 10px;
-    border-color: #64ffbc;
+    opacity: 0.85;
+    margin-bottom: 5px;
+    padding: 10px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  #zen-supporting footer:hover {
     z-index: 1;
     opacity: 1;
-    transform: scale(1.01);
+    -webkit-transform: scale(1.01);
+            transform: scale(1.01);
   }
-
+  .wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2fr 1fr 1fr;
+        grid-template-columns: 2fr 1fr 1fr;
+    gap: 0;
+    width: 95%;
+  }
+  .wrapper h3 {
+    font-size: small;
+    text-align: left;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    margin: 0;
+  }
   .sidebar {
     text-align: center;
     border-radius: 80px;
-    border: solid 5px;
-    background-color: aliceblue;
-    padding: 10px;
+    border-width: 5px;
     width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    transition: 0.2s ease;
-    z-index: 0;
-    opacity: 0.65;
-    display: block;
-    border-color: #64ffbc;
-    border-radius: 0px 0px 0px 0px;
+    opacity: 0.85;
+    margin-bottom: 5px;
+    padding: 10px;
+    font-family: "Spectral", "Playfair Display", "serif";
+    border-radius: 0%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
+    padding: 10px;
+    text-align: left;
     overflow: none;
-    transition: 0.2s;
+    background-color: #778899;
+    opacity: 1;
+    border: none;
   }
   .sidebar ul {
     list-style: none;
+    padding: 10px;
+    margin: 0;
+    text-align: left;
+  }
+  .sidebar ul li {
+    font-size: x-small;
+  }
+  .sidebar ul li a {
+    font-size: x-small;
+    color: black;
+    font-family: "Spectral", "Playfair Display", "serif";
+    font-weight: 400;
+    text-decoration: underline;
   }
 }
-
 /*# sourceMappingURL=showmewhatyougot.css.map */
