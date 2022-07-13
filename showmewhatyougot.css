@@ -21,15 +21,15 @@ a {
   font-family: "Zen Loop", sans-serif;
   font-weight: 700;
   font-size: x-large;
-  color: #9064ff;
+  color: rgba(144, 100, 255, 0.5);
 }
 
 a:visited {
-  color: #fd70df;
+  color: rgba(253, 112, 223, 0.5);
 }
 
 a:hover {
-  color: #ff7b64;
+  color: rgba(255, 123, 100, 0.5);
 }
 
 footer a {
@@ -37,18 +37,18 @@ footer a {
   font-family: "Zen Loop", sans-serif;
   font-weight: 700;
   color: white;
-  background-color: #9064ff;
+  background-color: rgba(144, 100, 255, 0.5);
   padding: 15px;
   border-radius: 90px 0 90px 0;
 }
 
 footer a:visited {
-  background-color: #fd70df;
+  background-color: rgba(253, 112, 223, 0.5);
   color: white;
 }
 
 footer a:hover {
-  background-color: #ff7b64;
+  background-color: rgba(255, 123, 100, 0.5);
   color: white;
 }
 
@@ -57,7 +57,7 @@ footer a:hover {
   padding: 10px;
   background-color: aliceblue;
   border-block: solid 20px;
-  border-color: #64ffbc;
+  border-color: rgba(100, 255, 188, 0.5);
   -webkit-transition: all 1s;
   transition: all 1s;
   z-index: 0;
@@ -69,7 +69,7 @@ footer a:hover {
   padding: 10px;
   background-color: aliceblue;
   border-block: solid 20px;
-  border-color: #fd70df;
+  border-color: rgba(253, 112, 223, 0.5);
   -webkit-transition: all 1s;
   transition: all 1s;
   z-index: 0;
@@ -84,7 +84,7 @@ footer a:hover {
   padding: 10px;
   background-color: aliceblue;
   border-block: solid 20px;
-  border-color: #9064ff;
+  border-color: rgba(144, 100, 255, 0.5);
   -webkit-transition: all 1s;
   transition: all 1s;
   z-index: 0;
@@ -99,7 +99,7 @@ footer a:hover {
   padding: 10px;
   background-color: aliceblue;
   border-block: solid 20px;
-  border-color: #ff7b64;
+  border-color: rgba(255, 123, 100, 0.5);
   -webkit-transition: all 1s;
   transition: all 1s;
   z-index: 0;
@@ -114,7 +114,7 @@ footer a:hover {
   padding: 10px;
   background-color: aliceblue;
   border-block: solid 20px;
-  border-color: #ffc964;
+  border-color: rgba(255, 201, 100, 0.5);
   -webkit-transition: all 1s;
   transition: all 1s;
   z-index: 0;
@@ -129,7 +129,7 @@ footer a:hover {
   padding: 10px;
   background-color: aliceblue;
   border-block: solid 20px;
-  border-color: #9064ff;
+  border-color: rgba(144, 100, 255, 0.5);
   -webkit-transition: all 1s;
   transition: all 1s;
   z-index: 0;
@@ -144,7 +144,7 @@ footer a:hover {
   padding: 10px;
   background-color: aliceblue;
   border-block: solid 20px;
-  border-color: #fd70df;
+  border-color: rgba(253, 112, 223, 0.5);
   -webkit-transition: all 1s;
   transition: all 1s;
   z-index: 0;
@@ -159,7 +159,7 @@ footer a:hover {
   padding: 10px;
   background-color: aliceblue;
   border-block: solid 20px;
-  border-color: #64ffbc;
+  border-color: rgba(100, 255, 188, 0.5);
   -webkit-transition: all 1s;
   transition: all 1s;
   z-index: 0;
@@ -174,7 +174,7 @@ footer a:hover {
   padding: 10px;
   background-color: aliceblue;
   border-block: solid 20px;
-  border-color: #64ffbc;
+  border-color: rgba(100, 255, 188, 0.5);
   -webkit-transition: all 1s;
   transition: all 1s;
   z-index: 0;
@@ -339,7 +339,7 @@ footer a:hover {
     padding: 10px;
     background-color: aliceblue;
     border-block: solid 20px;
-    border-color: #fd70df;
+    border-color: rgba(253, 112, 223, 0.5);
     -webkit-transition: all 1s;
     transition: all 1s;
     z-index: 0;
@@ -352,7 +352,7 @@ footer a:hover {
     padding: 10px;
     background-color: aliceblue;
     border-block: solid 20px;
-    border-color: #9064ff;
+    border-color: rgba(144, 100, 255, 0.5);
     -webkit-transition: all 1s;
     transition: all 1s;
     z-index: 0;
@@ -372,7 +372,7 @@ footer a:hover {
     padding: 10px;
     background-color: aliceblue;
     border-block: solid 20px;
-    border-color: #ff7b64;
+    border-color: rgba(255, 123, 100, 0.5);
     -webkit-transition: all 1s;
     transition: all 1s;
     z-index: 0;
@@ -406,7 +406,7 @@ footer a:hover {
     padding: 10px;
     background-color: aliceblue;
     border-block: solid 20px;
-    border-color: #64ffbc;
+    border-color: rgba(100, 255, 188, 0.5);
     -webkit-transition: all 1s;
     transition: all 1s;
     z-index: 0;
@@ -426,7 +426,7 @@ footer a:hover {
     padding: 10px;
     background-color: aliceblue;
     border-block: solid 20px;
-    border-color: #ffc964;
+    border-color: rgba(255, 201, 100, 0.5);
     -webkit-transition: all 1s;
     transition: all 1s;
     z-index: 0;
@@ -446,7 +446,7 @@ footer a:hover {
     padding: 10px;
     background-color: aliceblue;
     border-block: solid 20px;
-    border-color: #9064ff;
+    border-color: rgba(144, 100, 255, 0.5);
     -webkit-transition: all 1s;
     transition: all 1s;
     z-index: 0;
@@ -466,7 +466,7 @@ footer a:hover {
     padding: 10px;
     background-color: aliceblue;
     border-block: solid 20px;
-    border-color: #fd70df;
+    border-color: rgba(253, 112, 223, 0.5);
     -webkit-transition: all 1s;
     transition: all 1s;
     z-index: 0;
@@ -486,7 +486,7 @@ footer a:hover {
     padding: 10px;
     background-color: aliceblue;
     border-block: solid 20px;
-    border-color: #ffc964;
+    border-color: rgba(255, 201, 100, 0.5);
     -webkit-transition: all 1s;
     transition: all 1s;
     z-index: 0;
@@ -502,7 +502,7 @@ footer a:hover {
     padding: 10px;
     background-color: aliceblue;
     border-block: solid 20px;
-    border-color: #fd70df;
+    border-color: rgba(253, 112, 223, 0.5);
     -webkit-transition: all 1s;
     transition: all 1s;
     z-index: 0;
@@ -557,8 +557,6 @@ footer a:hover {
   }
   .intro header {
     text-align: center;
-    border-radius: 80px;
-    border-width: 5px;
     width: 90%;
     opacity: 0.85;
     margin-bottom: 5px;
@@ -573,8 +571,6 @@ footer a:hover {
   }
   .intro .summary {
     text-align: center;
-    border-radius: 80px;
-    border-width: 5px;
     width: 90%;
     opacity: 0.85;
     margin-bottom: 5px;
@@ -588,8 +584,6 @@ footer a:hover {
   }
   .intro .preamble {
     text-align: center;
-    border-radius: 80px;
-    border-width: 5px;
     width: 90%;
     opacity: 0.85;
     margin-bottom: 5px;
@@ -612,8 +606,6 @@ footer a:hover {
   }
   #zen-supporting .explanation {
     text-align: center;
-    border-radius: 80px;
-    border-width: 5px;
     width: 90%;
     opacity: 0.85;
     margin-bottom: 5px;
@@ -627,8 +619,6 @@ footer a:hover {
   }
   #zen-supporting .participation {
     text-align: center;
-    border-radius: 80px;
-    border-width: 5px;
     width: 90%;
     opacity: 0.85;
     margin-bottom: 5px;
@@ -642,8 +632,6 @@ footer a:hover {
   }
   #zen-supporting .benefits {
     text-align: center;
-    border-radius: 80px;
-    border-width: 5px;
     width: 90%;
     opacity: 0.85;
     margin-bottom: 5px;
@@ -657,8 +645,6 @@ footer a:hover {
   }
   #zen-supporting .requirements {
     text-align: center;
-    border-radius: 80px;
-    border-width: 5px;
     width: 90%;
     opacity: 0.85;
     margin-bottom: 5px;
@@ -672,8 +658,6 @@ footer a:hover {
   }
   #zen-supporting footer {
     text-align: center;
-    border-radius: 80px;
-    border-width: 5px;
     width: 90%;
     opacity: 0.85;
     margin-bottom: 5px;
@@ -705,8 +689,6 @@ footer a:hover {
   }
   .sidebar {
     text-align: center;
-    border-radius: 80px;
-    border-width: 5px;
     width: 90%;
     opacity: 0.85;
     margin-bottom: 5px;
@@ -719,9 +701,13 @@ footer a:hover {
     padding: 10px;
     text-align: left;
     overflow: none;
-    background-color: #778899;
+    border-color: rgba(144, 100, 255, 0.5);
+  }
+  .sidebar:hover {
+    z-index: 1;
     opacity: 1;
-    border: none;
+    -webkit-transform: scale(1.01);
+            transform: scale(1.01);
   }
   .sidebar ul {
     list-style: none;
