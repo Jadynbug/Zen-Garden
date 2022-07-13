@@ -319,25 +319,7 @@ footer a {
             margin: 5px;
 
         }
-        .page-wrapper {
-           display: grid;
-           grid-template-columns: 1fr 200px;
-           grid-template-rows: auto auto;
-        //    grid-template-rows: repeat(auto-fill, minmax(100px, 680px));
-           justify-items: center;
-           width: 97.7vw;       
-        }
-        .intro {
-            overflow-x: none;
-            &>* {
-                padding: 10px;
-                opacity: 0.55;
-                margin: 10px;
-            }
-            &>*:hover {
-                opacity: 1;
-            }
-    
+        
             & header {
                @include set-div2("top", $pink);
                width: 80vw;
