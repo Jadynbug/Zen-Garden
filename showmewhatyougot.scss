@@ -18,15 +18,7 @@ $purple:rgba(144, 100, 255, $op);
 $orange: rgba(255, 123, 100, $op);
 $yellow: rgba(255, 201, 100, $op);
 $textBackground: aliceblue;
-
-// //colors with opacity
-// $opGreen: rgba(100, 255, 188, $op);
-// $opPink: rgba(253, 112, 223, $op);
-// $opPurple: rgba(144, 100, 255, $op);
-// $opOrange: rgba(255, 123, 100, $op);
-// $opYellow: rgba(255, 201, 100, $op);
 //border radius
-$radius: 80px;
 $topLeft-bottomRight: 10px 10px 10px 10px;
 $topRight-bottomLeft: 10px 10px 10px 10px;
 //sets width for body
@@ -125,8 +117,6 @@ $widthB: $width + 15px;
 //div set up mixin for small screens
 @mixin set-div-small{
     text-align: center;
-   // border-radius: $radius;
-    //border-width: 5px; 
     width: $small-width;
     opacity: 0.85;
     margin-bottom: 5px; 
@@ -600,12 +590,8 @@ footer a {
         text-align: left;
         overflow: none;
         border-color:$purple;
-      //  opacity: 1;
-       // border-color:black;
-      //  border: none; 
-   
      
-       
+     
       &:hover {
         @include hover-effect(small);
     }
