@@ -421,7 +421,9 @@ footer a {
     }
   
     .page-wrapper {
-        display: grid;
+        //display: grid;
+        //grid-template-columns: 1fr;
+        //grid-template-rows: 1fr 1fr 1fr;
         gap: 0px; 
         overflow-x: hidden;
         background-color: #778899;
@@ -435,7 +437,7 @@ footer a {
   
     .intro {
        
-        display: grid;
+       // display: grid;
         //gap: 10px;
         justify-items: center;
         height:fit-content;
@@ -547,7 +549,7 @@ footer a {
     }
 
     .wrapper{
-        display: grid;
+       display: grid;
         grid-template-columns: 2fr 1fr 1fr;
         gap:0; 
      

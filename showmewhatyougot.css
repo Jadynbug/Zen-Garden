@@ -16,15 +16,18 @@ h2 {
 }
 
 a {
-  text-decoration: wavy;
+  -webkit-text-decoration: wavy;
+          text-decoration: wavy;
   font-family: "Zen Loop", sans-serif;
   font-weight: 700;
   font-size: x-large;
   color: rgba(144, 100, 255, 0.5);
 }
+
 a:visited {
   color: rgba(253, 112, 223, 0.5);
 }
+
 a:hover {
   color: rgba(255, 123, 100, 0.5);
 }
@@ -38,10 +41,12 @@ footer a {
   padding: 15px;
   border-radius: 90px 0 90px 0;
 }
+
 footer a:visited {
   background-color: rgba(253, 112, 223, 0.5);
   color: white;
 }
+
 footer a:hover {
   background-color: rgba(255, 123, 100, 0.5);
   color: white;
@@ -53,16 +58,19 @@ footer a:hover {
   background-color: aliceblue;
   border-block: solid 20px;
   border-color: rgba(100, 255, 188, 0.5);
+  -webkit-transition: all 1s;
   transition: all 1s;
   z-index: 0;
   border-radius: 0 0 90px 90px;
 }
+
 .intro .summary {
   text-align: center;
   padding: 10px;
   background-color: aliceblue;
   border-block: solid 20px;
   border-color: rgba(253, 112, 223, 0.5);
+  -webkit-transition: all 1s;
   transition: all 1s;
   z-index: 0;
   width: 600px;
@@ -70,12 +78,14 @@ footer a:hover {
   margin-right: auto;
   border-radius: 10px 10px 10px 10px;
 }
+
 .intro .preamble {
   text-align: center;
   padding: 10px;
   background-color: aliceblue;
   border-block: solid 20px;
   border-color: rgba(144, 100, 255, 0.5);
+  -webkit-transition: all 1s;
   transition: all 1s;
   z-index: 0;
   width: 600px;
@@ -90,6 +100,7 @@ footer a:hover {
   background-color: aliceblue;
   border-block: solid 20px;
   border-color: rgba(255, 123, 100, 0.5);
+  -webkit-transition: all 1s;
   transition: all 1s;
   z-index: 0;
   width: 600px;
@@ -97,12 +108,14 @@ footer a:hover {
   margin-right: auto;
   border-radius: 10px 10px 10px 10px;
 }
+
 #zen-supporting .participation {
   text-align: center;
   padding: 10px;
   background-color: aliceblue;
   border-block: solid 20px;
   border-color: rgba(255, 201, 100, 0.5);
+  -webkit-transition: all 1s;
   transition: all 1s;
   z-index: 0;
   width: 600px;
@@ -110,12 +123,14 @@ footer a:hover {
   margin-right: auto;
   border-radius: 10px 10px 10px 10px;
 }
+
 #zen-supporting .benefits {
   text-align: center;
   padding: 10px;
   background-color: aliceblue;
   border-block: solid 20px;
   border-color: rgba(144, 100, 255, 0.5);
+  -webkit-transition: all 1s;
   transition: all 1s;
   z-index: 0;
   width: 600px;
@@ -123,12 +138,14 @@ footer a:hover {
   margin-right: auto;
   border-radius: 10px 10px 10px 10px;
 }
+
 #zen-supporting .requirements {
   text-align: center;
   padding: 10px;
   background-color: aliceblue;
   border-block: solid 20px;
   border-color: rgba(253, 112, 223, 0.5);
+  -webkit-transition: all 1s;
   transition: all 1s;
   z-index: 0;
   width: 600px;
@@ -136,12 +153,14 @@ footer a:hover {
   margin-right: auto;
   border-radius: 10px 10px 10px 10px;
 }
+
 #zen-supporting footer {
   text-align: center;
   padding: 10px;
   background-color: aliceblue;
   border-block: solid 20px;
   border-color: rgba(100, 255, 188, 0.5);
+  -webkit-transition: all 1s;
   transition: all 1s;
   z-index: 0;
   width: 600px;
@@ -156,6 +175,7 @@ footer a:hover {
   background-color: aliceblue;
   border-block: solid 20px;
   border-color: rgba(100, 255, 188, 0.5);
+  -webkit-transition: all 1s;
   transition: all 1s;
   z-index: 0;
   width: 600px;
@@ -173,19 +193,23 @@ footer a:hover {
     background-size: 100vw 100vh;
     margin: 5px;
   }
-
   .page-wrapper {
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: 1fr 210px;
-    grid-template-rows: auto auto;
+    -ms-grid-columns: 1fr 210px;
+        grid-template-columns: 1fr 210px;
+    -ms-grid-rows: auto auto;
+        grid-template-rows: auto auto;
     justify-items: center;
     width: 97.7vw;
     margin-right: auto;
     margin-left: auto;
   }
-
   .intro {
+    display: -ms-grid;
     display: grid;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
     width: 100%;
   }
@@ -203,20 +227,23 @@ footer a:hover {
   .intro .summary:hover {
     z-index: 1;
     opacity: 1;
-    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
   }
   .intro .preamble:hover {
     z-index: 1;
     opacity: 1;
-    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
   }
-
   h1, h2 {
     margin: 5px;
   }
-
   #zen-supporting {
+    display: -ms-grid;
     display: grid;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
     width: 100%;
   }
@@ -231,32 +258,38 @@ footer a:hover {
   #zen-supporting .explanation:hover {
     z-index: 1;
     opacity: 1;
-    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
   }
   #zen-supporting .participation:hover {
     z-index: 1;
     opacity: 1;
-    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
   }
   #zen-supporting .benefits:hover {
     z-index: 1;
     opacity: 1;
-    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
   }
   #zen-supporting .requirements:hover {
     z-index: 1;
     opacity: 1;
-    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
   }
   #zen-supporting footer {
     padding: 15px;
     z-index: 0;
   }
-
   .sidebar {
     width: 200px;
     padding: 5px;
+    -ms-grid-column: 2;
     grid-column: 2;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
     grid-row: 1/span 2;
     padding-top: 5px;
     font-size: 10px;
@@ -269,6 +302,7 @@ footer a:hover {
     font-size: 23px;
   }
 }
+
 @media only screen and (max-width: 1200px) and (min-width: 901px) {
   body {
     background-image: url("./ZenGardenMaybes/pexels-benjamin-suter-3617500.jpg");
@@ -278,13 +312,13 @@ footer a:hover {
     background-size: 100vw 100vh;
     margin: 5px;
   }
-
   .intro header {
     text-align: center;
     padding: 10px;
     background-color: aliceblue;
     border-block: solid 20px;
     border-color: rgba(253, 112, 223, 0.5);
+    -webkit-transition: all 1s;
     transition: all 1s;
     z-index: 0;
     border-radius: 0 0 90px 90px;
@@ -297,6 +331,7 @@ footer a:hover {
     background-color: aliceblue;
     border-block: solid 20px;
     border-color: rgba(144, 100, 255, 0.5);
+    -webkit-transition: all 1s;
     transition: all 1s;
     z-index: 0;
     width: 600px;
@@ -307,7 +342,8 @@ footer a:hover {
   .intro .summary:hover {
     z-index: 1;
     opacity: 1;
-    transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+            transform: scale(1.02);
   }
   .intro .preamble {
     text-align: center;
@@ -315,6 +351,7 @@ footer a:hover {
     background-color: aliceblue;
     border-block: solid 20px;
     border-color: rgba(255, 123, 100, 0.5);
+    -webkit-transition: all 1s;
     transition: all 1s;
     z-index: 0;
     width: 600px;
@@ -325,13 +362,12 @@ footer a:hover {
   .intro .preamble:hover {
     z-index: 1;
     opacity: 1;
-    transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+            transform: scale(1.02);
   }
-
   h1, h2 {
     margin: 5px;
   }
-
   #zen-supporting {
     width: 100%;
   }
@@ -349,6 +385,7 @@ footer a:hover {
     background-color: aliceblue;
     border-block: solid 20px;
     border-color: rgba(100, 255, 188, 0.5);
+    -webkit-transition: all 1s;
     transition: all 1s;
     z-index: 0;
     width: 600px;
@@ -359,7 +396,8 @@ footer a:hover {
   #zen-supporting .explanation:hover {
     z-index: 1;
     opacity: 1;
-    transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+            transform: scale(1.02);
   }
   #zen-supporting .participation {
     text-align: center;
@@ -367,6 +405,7 @@ footer a:hover {
     background-color: aliceblue;
     border-block: solid 20px;
     border-color: rgba(255, 201, 100, 0.5);
+    -webkit-transition: all 1s;
     transition: all 1s;
     z-index: 0;
     width: 600px;
@@ -377,7 +416,8 @@ footer a:hover {
   #zen-supporting .participation:hover {
     z-index: 1;
     opacity: 1;
-    transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+            transform: scale(1.02);
   }
   #zen-supporting .benefits {
     text-align: center;
@@ -385,6 +425,7 @@ footer a:hover {
     background-color: aliceblue;
     border-block: solid 20px;
     border-color: rgba(144, 100, 255, 0.5);
+    -webkit-transition: all 1s;
     transition: all 1s;
     z-index: 0;
     width: 600px;
@@ -395,7 +436,8 @@ footer a:hover {
   #zen-supporting .benefits:hover {
     z-index: 1;
     opacity: 1;
-    transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+            transform: scale(1.02);
   }
   #zen-supporting .requirements {
     text-align: center;
@@ -403,6 +445,7 @@ footer a:hover {
     background-color: aliceblue;
     border-block: solid 20px;
     border-color: rgba(253, 112, 223, 0.5);
+    -webkit-transition: all 1s;
     transition: all 1s;
     z-index: 0;
     width: 600px;
@@ -413,7 +456,8 @@ footer a:hover {
   #zen-supporting .requirements:hover {
     z-index: 1;
     opacity: 1;
-    transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+            transform: scale(1.02);
   }
   #zen-supporting footer {
     text-align: center;
@@ -421,6 +465,7 @@ footer a:hover {
     background-color: aliceblue;
     border-block: solid 20px;
     border-color: rgba(255, 201, 100, 0.5);
+    -webkit-transition: all 1s;
     transition: all 1s;
     z-index: 0;
     width: 600px;
@@ -431,12 +476,14 @@ footer a:hover {
     z-index: 0;
   }
 }
+
 .sidebar {
   text-align: center;
   padding: 10px;
   background-color: aliceblue;
   border-block: solid 20px;
   border-color: rgba(253, 112, 223, 0.5);
+  -webkit-transition: all 1s;
   transition: all 1s;
   z-index: 0;
   width: 600px;
@@ -445,15 +492,20 @@ footer a:hover {
   border-radius: 90px 0 0 90px;
   width: 200px;
   padding: 5px;
+  -ms-grid-column: 2;
   grid-column: 2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
   grid-row: 1/span 2;
   padding-top: 5px;
   font-size: 10px;
   opacity: 0.55;
 }
+
 .sidebar:hover {
   opacity: 1;
 }
+
 .sidebar li a {
   font-size: 23px;
 }
@@ -462,9 +514,7 @@ footer a:hover {
   body {
     overflow-x: hidden;
   }
-
   .page-wrapper {
-    display: grid;
     gap: 0px;
     overflow-x: hidden;
     background-color: #778899;
@@ -473,12 +523,13 @@ footer a:hover {
     background-attachment: fixed;
     background-position: center;
     background-size: 100vw 100vh;
+    -webkit-transition: 0;
     transition: 0;
   }
-
   .intro {
-    display: grid;
     justify-items: center;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
   }
   .intro header {
@@ -492,7 +543,8 @@ footer a:hover {
   .intro header:hover {
     z-index: 1;
     opacity: 1;
-    transform: scale(1.01);
+    -webkit-transform: scale(1.01);
+            transform: scale(1.01);
   }
   .intro .summary {
     text-align: center;
@@ -504,7 +556,8 @@ footer a:hover {
   .intro .summary:hover {
     z-index: 1;
     opacity: 1;
-    transform: scale(1.01);
+    -webkit-transform: scale(1.01);
+            transform: scale(1.01);
   }
   .intro .preamble {
     text-align: center;
@@ -516,15 +569,16 @@ footer a:hover {
   .intro .preamble:hover {
     z-index: 1;
     opacity: 1;
-    transform: scale(1.01);
+    -webkit-transform: scale(1.01);
+            transform: scale(1.01);
   }
-
   h1, h2 {
     margin: 5px;
   }
-
   #zen-supporting {
     justify-items: center;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
   }
   #zen-supporting .explanation {
@@ -537,7 +591,8 @@ footer a:hover {
   #zen-supporting .explanation:hover {
     z-index: 1;
     opacity: 1;
-    transform: scale(1.01);
+    -webkit-transform: scale(1.01);
+            transform: scale(1.01);
   }
   #zen-supporting .participation {
     text-align: center;
@@ -549,7 +604,8 @@ footer a:hover {
   #zen-supporting .participation:hover {
     z-index: 1;
     opacity: 1;
-    transform: scale(1.01);
+    -webkit-transform: scale(1.01);
+            transform: scale(1.01);
   }
   #zen-supporting .benefits {
     text-align: center;
@@ -561,7 +617,8 @@ footer a:hover {
   #zen-supporting .benefits:hover {
     z-index: 1;
     opacity: 1;
-    transform: scale(1.01);
+    -webkit-transform: scale(1.01);
+            transform: scale(1.01);
   }
   #zen-supporting .requirements {
     text-align: center;
@@ -573,7 +630,8 @@ footer a:hover {
   #zen-supporting .requirements:hover {
     z-index: 1;
     opacity: 1;
-    transform: scale(1.01);
+    -webkit-transform: scale(1.01);
+            transform: scale(1.01);
   }
   #zen-supporting footer {
     text-align: center;
@@ -581,17 +639,21 @@ footer a:hover {
     opacity: 0.85;
     margin-bottom: 5px;
     padding: 10px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
   }
   #zen-supporting footer:hover {
     z-index: 1;
     opacity: 1;
-    transform: scale(1.01);
+    -webkit-transform: scale(1.01);
+            transform: scale(1.01);
   }
-
   .wrapper {
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
+    -ms-grid-columns: 2fr 1fr 1fr;
+        grid-template-columns: 2fr 1fr 1fr;
     gap: 0;
     width: 95%;
   }
@@ -602,7 +664,6 @@ footer a:hover {
     padding-bottom: 5px;
     margin: 0;
   }
-
   .sidebar {
     text-align: center;
     width: 90%;
@@ -611,6 +672,8 @@ footer a:hover {
     padding: 10px;
     font-family: "Spectral", "Playfair Display", "serif";
     border-radius: 0%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
     padding: 10px;
     text-align: left;
@@ -620,7 +683,8 @@ footer a:hover {
   .sidebar:hover {
     z-index: 1;
     opacity: 1;
-    transform: scale(1.01);
+    -webkit-transform: scale(1.01);
+            transform: scale(1.01);
   }
   .sidebar ul {
     list-style: none;
@@ -639,5 +703,4 @@ footer a:hover {
     text-decoration: underline;
   }
 }
-
 /*# sourceMappingURL=showmewhatyougot.css.map */
