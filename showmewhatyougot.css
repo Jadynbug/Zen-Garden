@@ -12,7 +12,7 @@ h1 {
 }
 
 h2 {
-  font-synthesis: 1em;
+  font-size: 1em;
 }
 
 a {
@@ -187,7 +187,6 @@ footer a:hover {
   .intro {
     display: grid;
     height: fit-content;
-    overflow-x: none;
     width: 100%;
   }
   .intro > * {
@@ -280,25 +279,6 @@ footer a:hover {
     margin: 5px;
   }
 
-  .page-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 200px;
-    grid-template-rows: auto auto;
-    justify-items: center;
-    width: 97.7vw;
-  }
-
-  .intro {
-    overflow-x: none;
-  }
-  .intro > * {
-    padding: 10px;
-    opacity: 0.55;
-    margin: 10px;
-  }
-  .intro > *:hover {
-    opacity: 1;
-  }
   .intro header {
     text-align: center;
     padding: 10px;
@@ -450,43 +430,43 @@ footer a:hover {
     padding: 15px;
     z-index: 0;
   }
-
-  .sidebar {
-    text-align: center;
-    padding: 10px;
-    background-color: aliceblue;
-    border-block: solid 20px;
-    border-color: rgba(253, 112, 223, 0.5);
-    transition: all 1s;
-    z-index: 0;
-    width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 90px 0 0 90px;
-    width: 200px;
-    padding: 5px;
-    grid-column: 2;
-    grid-row: 1/span 2;
-    padding-top: 5px;
-    font-size: 10px;
-    opacity: 0.55;
-  }
-  .sidebar:hover {
-    opacity: 1;
-  }
-  .sidebar li a {
-    font-size: 23px;
-  }
 }
+.sidebar {
+  text-align: center;
+  padding: 10px;
+  background-color: aliceblue;
+  border-block: solid 20px;
+  border-color: rgba(253, 112, 223, 0.5);
+  transition: all 1s;
+  z-index: 0;
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 90px 0 0 90px;
+  width: 200px;
+  padding: 5px;
+  grid-column: 2;
+  grid-row: 1/span 2;
+  padding-top: 5px;
+  font-size: 10px;
+  opacity: 0.55;
+}
+.sidebar:hover {
+  opacity: 1;
+}
+.sidebar li a {
+  font-size: 23px;
+}
+
 @media only screen and (max-width: 900px) {
   body {
-    overflow-x: none;
+    overflow-x: hidden;
   }
 
   .page-wrapper {
     display: grid;
     gap: 0px;
-    overflow-x: none;
+    overflow-x: hidden;
     background-color: #778899;
     background-image: url("./ZenGardenMaybes/pexels-irina-iriser-1381679.jpg");
     background-repeat: no-repeat;
@@ -634,7 +614,7 @@ footer a:hover {
     height: fit-content;
     padding: 10px;
     text-align: left;
-    overflow: none;
+    overflow: hidden;
     border-color: rgba(144, 100, 255, 0.5);
   }
   .sidebar:hover {

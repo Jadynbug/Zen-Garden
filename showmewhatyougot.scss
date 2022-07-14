@@ -151,7 +151,7 @@ h1 {
     font-size: 3em;
 }
 h2 {
-    font-synthesis: 1em;
+    font-size: 1em;
 }
 a {
     @include linkStyle2();
@@ -214,7 +214,6 @@ footer a {
     .intro {
         display: grid; 
         height:fit-content;
-        overflow-x: none;
         width: 100%;
         &>* {
             padding: 10px;
@@ -317,30 +316,31 @@ footer a {
             background-position: center;
             background-size: 100vw 100vh;
             margin: 5px;
-
         }
         
-            & header {
-               @include set-div2("top", $pink);
-               width: 80vw;
-               z-index: 3;
-    
+            .intro {
+                & header {
+                    @include set-div2("top", $pink);
+                    width: 80vw;
+                    z-index: 3;
+         
+                 }
+                 & .summary {
+                     @include set-div2("middleA", $purple);
+                    
+                     &:hover {
+                         @include hover-effect(medium);
+                     }
+                 }
+                 & .preamble {
+                     @include set-div2("middleB", $orange);
+                     
+                     &:hover {
+                         @include hover-effect(medium);
+                     }
+                 }
             }
-            & .summary {
-                @include set-div2("middleA", $purple);
-               
-                &:hover {
-                    @include hover-effect(medium);
-                }
-            }
-            & .preamble {
-                @include set-div2("middleB", $orange);
-                
-                &:hover {
-                    @include hover-effect(medium);
-                }
-            }
-        }
+        
         h1, h2 {
             margin: 5px;
         }
@@ -390,7 +390,7 @@ footer a {
                 
             }
         }
-    
+}
         .sidebar {
             @include set-div2("side", $pink);
             width: 200px;
@@ -410,7 +410,6 @@ footer a {
         }
     
  
-    }
 
 
 //for little screens
@@ -418,13 +417,13 @@ footer a {
   
  
     body{
-        overflow-x: none;
+        overflow-x: hidden;
     }
   
     .page-wrapper {
         display: grid;
         gap: 0px; 
-        overflow-x: none;
+        overflow-x: hidden;
         background-color: #778899;
         background-image: url('./ZenGardenMaybes/pexels-irina-iriser-1381679.jpg');
         background-repeat: no-repeat;
@@ -570,7 +569,7 @@ footer a {
         height: fit-content; 
         padding: 10px; 
         text-align: left;
-        overflow: none;
+        overflow: hidden;
         border-color:$purple;
      
      
