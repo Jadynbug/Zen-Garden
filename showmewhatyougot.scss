@@ -391,25 +391,48 @@ footer a {
             }
         }
 }
-        .sidebar {
-            @include set-div2("side", $pink);
-            width: 200px;
-            padding: 5px; 
-            grid-column: 2;
-            grid-row: 1/span 2;
-            padding-top: 5px;
-            font-size: 10px;
-            opacity: 0.55;
-    
-            &:hover {
-                opacity: 1;
-            }
-            & li a {
-                font-size: 23px;
-            }
-        }
-    
- 
+
+.wrapper{
+    display: grid;
+     grid-template-columns: 2fr 1fr 1fr;
+     gap:0;
+      & h3{
+         font-size: small;
+         text-align: left;
+         padding-left: 10px;
+         padding-bottom: 5px;
+         margin:0;
+     }
+     width: 95%;
+ }
+ .sidebar {
+     @include set-div-small();
+     font-family: $serif-font;
+     border-radius: 0%;
+     height: fit-content;
+     padding: 10px;
+     text-align: left;
+     overflow: hidden;
+     border-color:$purple;
+   &:hover {
+     @include hover-effect(small);
+ }
+ ul {
+     @include listin();
+     padding:10px;
+     margin: 0;
+     text-align: left;
+     & li {
+         font-size: x-small;
+     }
+     & li a {
+       font-size: x-small;
+       color: black;
+       font-family: $serif-font;
+       font-weight:400;
+       text-decoration: underline;
+    }
+ }
 
 
 //for little screens
