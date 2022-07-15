@@ -321,8 +321,7 @@ footer a {
         .intro {
             & header {
                 @include set-div2("top", $pink);
-                width: 100%; 
-                  
+                
                 &:hover {
                     @include hover-effect(small); 
                    
