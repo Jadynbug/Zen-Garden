@@ -288,8 +288,11 @@ footer a:hover {
     transition: all 1s;
     z-index: 0;
     border-radius: 0 0 90px 90px;
-    width: 80vw;
-    z-index: 3;
+  }
+  .intro header:hover {
+    z-index: 1;
+    opacity: 1;
+    transform: scale(1.01);
   }
   .intro .summary {
     text-align: center;
@@ -303,6 +306,7 @@ footer a:hover {
     margin-left: auto;
     margin-right: auto;
     border-radius: 10px 10px 10px 10px;
+    margin-top: 10px;
   }
   .intro .summary:hover {
     z-index: 1;
@@ -321,6 +325,7 @@ footer a:hover {
     margin-left: auto;
     margin-right: auto;
     border-radius: 10px 10px 10px 10px;
+    margin-top: 10px;
   }
   .intro .preamble:hover {
     z-index: 1;
@@ -464,16 +469,17 @@ footer a:hover {
     opacity: 1;
     transform: scale(1.01);
   }
-  .sidebar ul {
+
+  ul {
     list-style: none;
     padding: 10px;
     margin: 0;
     text-align: left;
   }
-  .sidebar ul li {
+  ul li {
     font-size: x-small;
   }
-  .sidebar ul li a {
+  ul li a {
     font-size: x-small;
     color: black;
     font-family: "Spectral", "Playfair Display", "serif";
@@ -481,7 +487,7 @@ footer a:hover {
     text-decoration: underline;
   }
 }
-@media only screen and (max-width: 1200px) and (min-width: 901px) and (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   body {
     overflow-x: hidden;
   }
