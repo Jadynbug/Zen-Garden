@@ -319,32 +319,34 @@ footer a {
         }
         
         .intro {
+            &>* {
+                opacity: 0.45;
+            }
+            &>*:hover {
+                opacity: 1;
+            }
+
             & header {
                 @include set-div2("top", $pink);
-                
-                &:hover {
-                    @include hover-effect(small); 
-                   
-                }
                
             }
                 
-                & .summary {
-                    @include set-div2("middleA", $purple);
-                    margin-top: 10px;
+            & .summary {
+                @include set-div2("middleA", $purple);
+                margin-top: 10px;
+            
+                &:hover {
+                    @include hover-effect(medium);
+                }
+            }
+            & .preamble {
+                @include set-div2("middleB", $orange);
+                margin-top: 10px;
                 
-                    &:hover {
-                        @include hover-effect(medium);
-                    }
+                &:hover {
+                    @include hover-effect(medium);
                 }
-                & .preamble {
-                    @include set-div2("middleB", $orange);
-                    margin-top: 10px;
-                    
-                    &:hover {
-                        @include hover-effect(medium);
-                    }
-                }
+            }
         }
         
         h1, h2 {

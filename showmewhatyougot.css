@@ -279,6 +279,12 @@ footer a:hover {
     margin: 5px;
   }
 
+  .intro > * {
+    opacity: 0.45;
+  }
+  .intro > *:hover {
+    opacity: 1;
+  }
   .intro header {
     text-align: center;
     padding: 10px;
@@ -288,11 +294,6 @@ footer a:hover {
     transition: all 1s;
     z-index: 0;
     border-radius: 0 0 90px 90px;
-  }
-  .intro header:hover {
-    z-index: 1;
-    opacity: 1;
-    transform: scale(1.01);
   }
   .intro .summary {
     text-align: center;
