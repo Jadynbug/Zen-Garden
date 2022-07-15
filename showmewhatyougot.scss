@@ -318,28 +318,28 @@ footer a {
             margin: 5px;
         }
         
-            .intro {
-                & header {
-                    @include set-div2("top", $pink);
-                    width: 80vw;
-                    z-index: 3;
-         
-                 }
-                 & .summary {
-                     @include set-div2("middleA", $purple);
+        .intro {
+            & header {
+                @include set-div2("top", $pink);
+                width: 80vw;
+                z-index: 3;
+        
+                }
+                & .summary {
+                    @include set-div2("middleA", $purple);
+                
+                    &:hover {
+                        @include hover-effect(medium);
+                    }
+                }
+                & .preamble {
+                    @include set-div2("middleB", $orange);
                     
-                     &:hover {
-                         @include hover-effect(medium);
-                     }
-                 }
-                 & .preamble {
-                     @include set-div2("middleB", $orange);
-                     
-                     &:hover {
-                         @include hover-effect(medium);
-                     }
-                 }
-            }
+                    &:hover {
+                        @include hover-effect(medium);
+                    }
+                }
+        }
         
         h1, h2 {
             margin: 5px;
@@ -390,49 +390,50 @@ footer a {
                 
             }
         }
+        .wrapper{
+            display: grid;
+             grid-template-columns: 2fr 1fr 1fr;
+             gap:0;
+              & h3{
+                 font-size: small;
+                 text-align: left;
+                 padding-left: 10px;
+                 padding-bottom: 5px;
+                 margin:0;
+             }
+             width: 95%;
+         }
+         .sidebar {
+             @include set-div-small();
+             font-family: $serif-font;
+             border-radius: 0%;
+             height: fit-content;
+             padding: 10px;
+             text-align: left;
+             overflow: hidden;
+             border-color:$purple;
+           &:hover {
+             @include hover-effect(small);
+         }
+         ul {
+             @include listin();
+             padding:10px;
+             margin: 0;
+             text-align: left;
+             & li {
+                 font-size: x-small;
+             }
+             & li a {
+               font-size: x-small;
+               color: black;
+               font-family: $serif-font;
+               font-weight:400;
+               text-decoration: underline;
+            }
+         }
 }
 
-.wrapper{
-    display: grid;
-     grid-template-columns: 2fr 1fr 1fr;
-     gap:0;
-      & h3{
-         font-size: small;
-         text-align: left;
-         padding-left: 10px;
-         padding-bottom: 5px;
-         margin:0;
-     }
-     width: 95%;
- }
- .sidebar {
-     @include set-div-small();
-     font-family: $serif-font;
-     border-radius: 0%;
-     height: fit-content;
-     padding: 10px;
-     text-align: left;
-     overflow: hidden;
-     border-color:$purple;
-   &:hover {
-     @include hover-effect(small);
- }
- ul {
-     @include listin();
-     padding:10px;
-     margin: 0;
-     text-align: left;
-     & li {
-         font-size: x-small;
-     }
-     & li a {
-       font-size: x-small;
-       color: black;
-       font-family: $serif-font;
-       font-weight:400;
-       text-decoration: underline;
-    }
- }
+
 
 
 //for little screens
@@ -626,4 +627,5 @@ footer a {
        
 } 
 
+}
 }
