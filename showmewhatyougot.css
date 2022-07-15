@@ -464,11 +464,12 @@ footer a:hover {
     text-align: left;
     overflow: hidden;
     border-color: rgba(144, 100, 255, 0.5);
+    opacity: 0.45;
   }
   .sidebar:hover {
     z-index: 1;
     opacity: 1;
-    transform: scale(1.01);
+    transform: scale(1.02);
   }
 
   ul {
