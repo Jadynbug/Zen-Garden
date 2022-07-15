@@ -321,10 +321,18 @@ footer a {
         .intro {
             & header {
                 @include set-div2("top", $pink);
-                width: 80vw;
-                z-index: 3;
-        
+                width: width: 100%; 
+                  
+                &:hover {
+                    @include hover-effect(small); 
+                   
                 }
+               
+            }
+
+                & header {
+                    @include set-div-small();
+                    
                 & .summary {
                     @include set-div2("middleA", $purple);
                 
